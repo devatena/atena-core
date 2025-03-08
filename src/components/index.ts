@@ -1,0 +1,1 @@
+export { default as MeuBotao } from "./MeuBotao.vue";
