@@ -1,1 +1,3 @@
-export { default as MeuBotao } from "./MeuBotao.vue";
+export { default as AtnButton } from  "./AtnButton.vue"
+export { default as AtnInput } from "./AtnInput.vue"
+export { default as AtnRadio } from "./AtnRadio.vue"
