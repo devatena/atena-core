@@ -2,7 +2,7 @@
   <div class="container-pai">
     <form class="form">
       <AtnInput
-        v-model:inputValue="cpf"
+        v-model="cpf"
         labelFontWeight="600"
         fontFamily="Poppins"
         label="CPF ou E-mail"
@@ -12,7 +12,7 @@
         labelColor="#AC6200"
       ></AtnInput>
       <AtnInput
-        v-model:inputValue="senha"
+        v-model="senha"
         labelFontWeight="600"
         placeholderFontWeight="300"
         fontFamily="Poppins"
@@ -30,7 +30,6 @@
           labelFontWeight="400"
           fontFamily="Poppins"
           backgroundColorActive="#AC6200"
-          backgroundColor="transparent"
           fontColor="#999"
           option="Masculino"
           label="Sexo:"
@@ -56,9 +55,6 @@
         >Entrar</AtnButton
       >
     </form>
-    {{ senha }}
-    {{ cpf }}
-    {{ valorRadio }}
   </div>
 </template>
 

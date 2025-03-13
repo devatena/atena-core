@@ -1,24 +1,29 @@
 <template>
-  <button
-    v-outline
-    v-muda-cor-da-fonte
-    v-muda-background
-    v-fonte-weight
-    v-muda-fonte
+  <div
     :class="['default', expand, type]"
+    v-muda-gap
+    v-muda-cor-da-fonte
+    v-outline
+    v-muda-background
   >
+    <span>Icone aqui</span>
     <!-- <IonIcon class="icon" :icon="icon" />  -->
-    <slot></slot>
-  </button>
+    <p>Icone Label</p>
+  </div>
 </template>
 
 <script setup>
 //  import * as icons from "ionicons/icons";
 //  import { IonIcon } from "@ionic/vue";
-import { onMounted } from "vue";
-import { ref } from "vue";
+
+// const icon = ref(icons[props.icone])
+
 const props = defineProps({
-  expand: {
+  labelIcon: {
+    type: String,
+    default: "",
+  },
+  icon: {
     type: String,
     default: "",
   },
@@ -26,7 +31,11 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  icone: {
+  type: {
+    type: String,
+    default: "solid",
+  },
+  expand: {
     type: String,
     default: "",
   },
@@ -34,24 +43,11 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  borderColor: {
+  gap: {
     type: String,
     default: "",
-  },
-  fontWeight: {
-    type: String,
-    default: "",
-  },
-  fontFamily: {
-    type: String,
-    default: "",
-  },
-  type: {
-    type: String,
-    default: "solid",
   },
 });
-// const icon = ref(icons[props.icone])
 
 const vMudaBackground = {
   mounted: (el) => {
@@ -71,64 +67,67 @@ const vOutline = {
   },
 };
 
-const vFonteWeight = {
+const vMudaGap = {
   mounted: (el) => {
-    el.style.fontWeight = props.fontWeight;
-  },
-};
-
-const vMudaFonte = {
-  mounted: (el) => {
-    el.style.fontFamily = props.fontFamily;
+    el.style.gap = props.gap;
   },
 };
 </script>
 
 <style scoped>
 .default {
-  gap: 6px;
-  border: none;
-  outline: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background: none;
-  color: white;
-  padding: 10px;
   cursor: pointer;
+  padding: 9px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  background-color: rgb(70, 19, 189);
   z-index: 0;
-  border-radius: 30px;
+  position: relative;
+  border-radius: 4px;
 }
 
 .default::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: var(--bg-color, rgba(255, 255, 255, 0.2));
   z-index: -1;
-  border-radius: 30px;
-  background-color: var(--bg-color, #7419a8);
 }
 
 .default:hover::before {
   filter: contrast(0.75);
 }
 
-.block {
+p {
+  font-family: Poppins, sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 11px;
+}
+
+.expand {
   width: 100%;
 }
 
 .default.outline {
+  background-color: transparent;
   --bg-color: transparent;
-  border: 2px solid rgb(79, 18, 177);
-  color: rgb(60, 43, 88);
+  border: 2px solid rgb(77, 13, 151);
 }
 
-.icon {
-  width: 20px;
+.default.outline p {
+  color: black;
+}
+.icon{
+    width: 20px;
+}
+.block{
+    width: 100%;
 }
 </style>

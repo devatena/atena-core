@@ -1,11 +1,10 @@
 <template>
   <div class="container-pai">
-    <form class="form">
+    <form @submit.prevent class="form">
       <div class="inputs-login">
         <AtnInput
-    
           gap="7px"
-          v-model:inputValue="cpf"
+          v-model="cpf"
           labelFontWeight="600"
           placeholderColor="#6E6E6C"
           fontFamily="Poppins"
@@ -14,16 +13,14 @@
           expand="block"
           placeholderFontWeight="300"
           labelColor="#5845DB"
-          backgroundColor="#F3F3F3"
         ></AtnInput>
         <AtnInput
           gap="7px"
-          v-model:inputValue="senha"
+          v-model="senha"
           placeholderColor="#6E6E6C"
           labelFontWeight="600"
           placeholderFontWeight="300"
           fontFamily="Poppins"
-          backgroundColor="#F3F3F3"
           label="Senha"
           placeholder="Insira sua senha"
           expand="block"
@@ -34,8 +31,6 @@
         @click="router.push('/formPageTeste')"
         fontFamily="Poppins"
         expand="block"
-        fontColor="white"
-        backgroundColor="#712FB5"
         >Entrar</AtnButton
       >
       <a class="senha">Esqueci minha senha</a>
@@ -49,11 +44,9 @@ import { AtnInput } from "../../../src";
 import { AtnButton } from "../../../src";
 import { useRouter } from "vue-router";
 
+const router = useRouter();
 const cpf = ref("");
 const senha = ref("");
-const valorRadio = ref("");
-
-const router = useRouter();
 </script>
 
 <style scoped>
