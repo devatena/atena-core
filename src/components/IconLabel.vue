@@ -1,7 +1,6 @@
 <template>
   <div
     :class="['default', expand, type]"
-    v-muda-gap
     v-muda-cor-da-fonte
     v-outline
     v-muda-background
@@ -43,30 +42,8 @@ const props = defineProps({
     default: "",
   },
 });
+import { vMudaBackground, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal"
 
-const vMudaBackground = {
-  mounted: (el) => {
-    el.style.setProperty("--bg-color", props.backgroundColor);
-  },
-};
-
-const vMudaCorDaFonte = {
-  mounted: (el) => {
-    el.style.color = props.fontColor;
-  },
-};
-
-const vOutline = {
-  mounted: (el) => {
-    el.style.border = `2px solid ${props.borderColor}`;
-  },
-};
-
-const vMudaGap = {
-  mounted: (el) => {
-    el.style.gap = props.gap;
-  },
-};
 </script>
 
 <style scoped>

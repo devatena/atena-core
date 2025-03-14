@@ -27,7 +27,9 @@
           labelColor="#5845DB"
         ></AtnInput>
       </div>
-      <AtnButton @click="router.push('/formPageTeste')" expand="block"
+      <AtnButton
+     @click="router.push('/formPageTeste')" 
+     expand="block"
         >Entrar</AtnButton
       >
       <a class="senha">Esqueci minha senha</a>

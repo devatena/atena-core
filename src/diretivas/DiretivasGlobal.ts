@@ -17,3 +17,8 @@ export const vFonteWeight = {
     },
   };
   
+export const vMudaCorDaBorda = {
+  mounted: (el, binding) => {
+    el.style.borderColor = binding.value;
+  },
+};

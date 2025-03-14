@@ -1,5 +1,6 @@
 <template>
   <button
+    v-muda-cor-da-borda="borderColor"
     v-muda-cor-da-fonte="fontColor"
     v-muda-background="backgroundColor"
     v-fonte-weight="fontWeight"
@@ -8,9 +9,9 @@
     <slot></slot>
   </button>
 </template>
-
 <script setup>
-import { vMudaBackground, vMudaCorDaFonte, vFonteWeight } from "../diretivas/ButtonDiretivas"; 
+
+import { vMudaCorDaFonte, vMudaBackground, vFonteWeight, vMudaCorDaBorda } from "../diretivas/DiretivasGlobal"
 
 defineProps({
   expand: {
@@ -42,7 +43,6 @@ defineProps({
     default: "solid",
   },
 });
-
 </script>
 <style scoped>
 .default {
@@ -59,7 +59,7 @@ defineProps({
   padding: 10px;
   cursor: pointer;
   z-index: 0;
-  border-radius: 30px;
+  border-radius: 30px; 
 }
 
 .default::before {
@@ -71,7 +71,7 @@ defineProps({
   left: 0;
   z-index: -1;
   border-radius: 30px;
-  background-color: var(--bg-color, #7419a8);
+  background-color: var(--bg-color, #A50087);
 }
 
 .default:hover::before {
@@ -90,5 +90,13 @@ defineProps({
 
 .icon {
   width: 20px;
+}
+.circle{
+  border-radius: 50%;
+}
+
+.secondary{
+  background-color: #F0C3F4;
+  color: #A50087;
 }
 </style>

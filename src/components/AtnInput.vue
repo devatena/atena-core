@@ -19,7 +19,8 @@
 </template>
 
 <script setup>
-import { vMudaBackground, vMudaCorDoLabel, vMudaCorDaFonte, vMudaCorDoPlaceholder, vLabelFonteWeight, vInputFonteWeight} from "../diretivas/InputDiretivas"
+import { vMudaCorDoLabel, vMudaCorDoPlaceholder, vLabelFonteWeight} from "../diretivas/InputDiretivas"
+import { vMudaBackground, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
 
 const props = defineProps({
   placeholder: {

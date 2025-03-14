@@ -4,7 +4,6 @@
       <AtnInput
         v-model="cpf"
         labelFontWeight="600"
-        fontFamily="Poppins"
         label="CPF ou E-mail"
         placeholder="CPF ou e-mail"
         expand="block"
@@ -15,7 +14,6 @@
         v-model="senha"
         labelFontWeight="600"
         placeholderFontWeight="300"
-        fontFamily="Poppins"
         label="Senha"
         placeholder="Insira sua senha"
         expand="block"
@@ -23,12 +21,9 @@
       ></AtnInput>
       <div class="radios">
         <AtnRadio
-          labelGap="10px"
           v-model:inputValue="valorRadio"
-          optionGap="4px"
           value="masculino"
           labelFontWeight="400"
-          fontFamily="Poppins"
           backgroundColorActive="#AC6200"
           fontColor="#999"
           option="Masculino"
@@ -36,22 +31,17 @@
         ></AtnRadio>
         <AtnRadio
           v-model:inputValue="valorRadio"
-          optionGap="4px"
           value="feminino"
           backgroundColorActive="#AC6200"
           fontColor="#999"
           option="Feminino"
-          fontFamily="Poppins"
-          optionFontWeight="400"
         ></AtnRadio>
       </div>
       <AtnButton
         @click="router.push('/formConnectOnTeste')"
-        fontFamily="Poppins"
         expand="block"
         fontColor="white"
         backgroundColor="#AC6200"
-        fontWeight="300"
         >Entrar</AtnButton
       >
     </form>

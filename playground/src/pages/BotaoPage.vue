@@ -1,14 +1,11 @@
 <template>
-  <AtnButton fontWeight="600" backgroundColor="#AC6200" fontColor="white"
+  <AtnButton>botao de teste</AtnButton>
+  <AtnButton
+    type="secondary"
     >botao de teste</AtnButton
   >
   <AtnButton
-    fontWeight="600"
-    borderColor="#AC6200"
-    fontColor="black"
-    >botao de teste</AtnButton
-  >
-  <AtnButton
+
     fontWeight="600"
     backgroundColor="blue"
     fontColor="white"

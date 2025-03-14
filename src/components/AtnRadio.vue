@@ -1,24 +1,22 @@
 <template>
-  <div v-muda-gap-label class="radio-div">
+  <div class="radio-div">
     <label v-if="props.label"
-      v-muda-fonte-weight-do-label
       v-muda-fonte
       v-muda-cor-da-fonte
       for="radioDefault"
       >{{ props.label }}</label
     >
-    <div v-muda-gap-option class="radio">
+    <div class="radio">
       <input
         :value="props.value"
         :checked="props.inputValue === props.value"
         @change="$emit('update:inputValue', props.value)"
-        v-muda-cor-da-borda
-        v-muda-background-ativo
-        v-muda-background
+        v-muda-cor-da-borda="props.borderColor"
+        v-muda-background-ativo="{ backgroundColorActive: props.backgroundColorActive, borderColor: props.borderColor }"        v-muda-background="props.backgroundColor"
         type="radio"
         id="radioDefault"
       />
-      <span v-muda-fonte-weight-da-option v-muda-fonte v-muda-cor-da-fonte>{{
+      <span v-muda-fonte v-muda-cor-da-fonte>{{
         props.option
       }}</span>
     </div>
@@ -26,6 +24,9 @@
 </template>
 
 <script setup>
+import { vMudaCorDaBorda, vMudaCorDaFonte, vMudaBackground } from '../diretivas/DiretivasGlobal';
+import { vMudaBackgroundAtivo } from '../diretivas/RadioDiretivas';
+
 const props = defineProps({
   label: {
     type: String,
@@ -55,14 +56,6 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  labelFontWeight: {
-    type: String,
-    default: "",
-  },
-  optionFontWeight: {
-    type: String,
-    default: "",
-  },
   inputValue: {
     type: String,
     default: "",
@@ -71,91 +64,19 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  labelGap: {
+  display:{
     type: String,
     default: "",
-  },
-  optionGap: {
-    type: String,
-    default: "",
-  },
+  }
 });
 
 defineEmits(["update:inputValue"]);
-
-const vMudaBackground = {
-  mounted: (el) => {
-    el.style.backgroundColor = props.backgroundColor;
-  },
-};
-
-const vMudaBackgroundAtivo = {
-  mounted(el) {
-    if (el.checked) {
-      el.style.setProperty("--checked-radio", props.backgroundColorActive);
-      el.style.borderColor = props.backgroundColorActive;
-    } else {
-      el.style.borderColor = props.borderColor;
-    }
-  },
-  updated(el) {
-    if (el.checked) {
-      el.style.setProperty("--checked-radio", props.backgroundColorActive);
-      el.style.borderColor = props.backgroundColorActive;
-    } else {
-      el.style.removeProperty("--checked-radio");
-      el.style.borderColor = props.borderColor;
-    }
-  },
-};
-
-const vMudaFonte = {
-  mounted: (el) => {
-    el.style.fontFamily = props.fontFamily;
-  },
-};
-
-const vMudaFonteWeightDoLabel = {
-  mounted: (el) => {
-    el.style.fontWeight = props.labelFontWeight;
-  },
-};
-
-const vMudaFonteWeightDaOption = {
-  mounted: (el) => {
-    el.style.fontWeight = props.optionFontWeight;
-  },
-};
-
-const vMudaCorDaFonte = {
-  mounted: (el) => {
-    el.style.color = props.fontColor;
-  },
-};
-
-const vMudaCorDaBorda = {
-  mounted: (el) => {
-    el.style.borderColor = props.borderColor;
-  },
-};
-const vMudaGapLabel = {
-  mounted: (el) => {
-    el.style.gap = props.labelGap;
-  },
-};
-
-const vMudaGapOption = {
-  mounted: (el) => {
-    el.style.gap = props.optionGap;
-  },
-};
-
 </script>
 
 <style scoped>
 .radio-div {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
 }
@@ -210,6 +131,10 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 </style>
