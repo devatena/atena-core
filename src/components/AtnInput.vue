@@ -1,20 +1,17 @@
 <template>
-  <div v-muda-gap :class="['', expand]">
-    <label
-      v-label-fonte-weight
-      v-muda-fonte
-      v-muda-cor-do-label
+  <div :class="['', expand]">
+    <label v-if="props.label"
+      v-label-fonte-weight="labelFontWeight"
+      v-muda-cor-do-label="labelColor"
       for="inputDefault"
       >{{ props.label }}</label
     >
     <input
       :class="['default', type]"
       v-model="model"
-      v-muda-cor-do-placeholder
-      v-input-fonte-weight
-      v-muda-background
-      v-muda-fonte
-      v-muda-cor-da-fonte
+      v-muda-cor-do-placeholder="placeholderColor"
+      v-muda-background="backgroundColor"
+      v-muda-cor-da-fonte="fontColor"
       id="inputDefault"
       :placeholder="placeholder"
     />
@@ -22,6 +19,8 @@
 </template>
 
 <script setup>
+import { vMudaBackground, vMudaCorDoLabel, vMudaCorDaFonte, vMudaCorDoPlaceholder, vLabelFonteWeight, vInputFonteWeight} from "../diretivas/InputDiretivas"
+
 const props = defineProps({
   placeholder: {
     type: String,
@@ -32,10 +31,6 @@ const props = defineProps({
     default: "",
   },
   label: {
-    type: String,
-    default: "",
-  },
-  fontFamily: {
     type: String,
     default: "",
   },
@@ -72,53 +67,6 @@ const props = defineProps({
     default: "solid",
   },
 });
-
-const vMudaGap = {
-  mounted: (el) => {
-    el.style.gap = props.gap;
-  },
-};
-const vMudaFonte = {
-  mounted: (el) => {
-    el.style.fontFamily = props.fontFamily;
-  },
-};
-
-const vMudaBackground = {
-  mounted: (el) => {
-    el.style.backgroundColor = props.backgroundColor;
-  },
-};
-
-const vMudaCorDoLabel = {
-  mounted: (el) => {
-    el.style.color = props.labelColor;
-  },
-};
-
-const vMudaCorDaFonte = {
-  mounted: (el) => {
-    el.style.color = props.fontColor;
-  },
-};
-
-const vMudaCorDoPlaceholder = {
-  mounted: (el) => {
-    el.style.setProperty("--placeholder-color", props.placeholderColor);
-  },
-};
-
-const vLabelFonteWeight = {
-  mounted: (el) => {
-    el.style.fontWeight = props.labelFontWeight;
-  },
-};
-
-const vInputFonteWeight = {
-  mounted: (el) => {
-    el.style.setProperty("--placeholder-weight", props.placeholderFontWeight);
-  },
-};
 
 const model = defineModel();
 </script>

@@ -7,16 +7,11 @@
     v-muda-background
   >
     <span>Icone aqui</span>
-    <!-- <IonIcon class="icon" :icon="icon" />  -->
     <p>Icone Label</p>
   </div>
 </template>
 
 <script setup>
-//  import * as icons from "ionicons/icons";
-//  import { IonIcon } from "@ionic/vue";
-
-// const icon = ref(icons[props.icone])
 
 const props = defineProps({
   labelIcon: {

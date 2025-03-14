@@ -3,12 +3,12 @@
     <form @submit.prevent class="form">
       <div class="inputs-login">
         <AtnInput
+          label="CPF ou e-mail"
           gap="7px"
           v-model="cpf"
           labelFontWeight="600"
           placeholderColor="#6E6E6C"
           fontFamily="Poppins"
-          label="CPF ou E-mail"
           placeholder="CPF ou e-mail"
           expand="block"
           placeholderFontWeight="300"
@@ -27,10 +27,7 @@
           labelColor="#5845DB"
         ></AtnInput>
       </div>
-      <AtnButton
-        @click="router.push('/formPageTeste')"
-        fontFamily="Poppins"
-        expand="block"
+      <AtnButton @click="router.push('/formPageTeste')" expand="block"
         >Entrar</AtnButton
       >
       <a class="senha">Esqueci minha senha</a>

@@ -1,6 +1,6 @@
 <template>
   <div v-muda-gap-label class="radio-div">
-    <label
+    <label v-if="props.label"
       v-muda-fonte-weight-do-label
       v-muda-fonte
       v-muda-cor-da-fonte
@@ -204,7 +204,7 @@ label {
   font-size: 14px;
 }
 span {
-  font-size: 14px;
+  font-size: 10px;
 }
 .radio {
   display: flex;

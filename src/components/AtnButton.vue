@@ -1,23 +1,18 @@
 <template>
   <button
-    v-outline
-    v-muda-cor-da-fonte
-    v-muda-background
-    v-fonte-weight
-    v-muda-fonte
+    v-muda-cor-da-fonte="fontColor"
+    v-muda-background="backgroundColor"
+    v-fonte-weight="fontWeight"
     :class="['default', expand, type]"
   >
-    <!-- <IonIcon class="icon" :icon="icon" />  -->
     <slot></slot>
   </button>
 </template>
 
 <script setup>
-//  import * as icons from "ionicons/icons";
-//  import { IonIcon } from "@ionic/vue";
-import { onMounted } from "vue";
-import { ref } from "vue";
-const props = defineProps({
+import { vMudaBackground, vMudaCorDaFonte, vFonteWeight } from "../diretivas/ButtonDiretivas"; 
+
+defineProps({
   expand: {
     type: String,
     default: "",
@@ -42,48 +37,13 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  fontFamily: {
-    type: String,
-    default: "",
-  },
   type: {
     type: String,
     default: "solid",
   },
 });
-// const icon = ref(icons[props.icone])
 
-const vMudaBackground = {
-  mounted: (el) => {
-    el.style.setProperty("--bg-color", props.backgroundColor);
-  },
-};
-
-const vMudaCorDaFonte = {
-  mounted: (el) => {
-    el.style.color = props.fontColor;
-  },
-};
-
-const vOutline = {
-  mounted: (el) => {
-    el.style.border = `2px solid ${props.borderColor}`;
-  },
-};
-
-const vFonteWeight = {
-  mounted: (el) => {
-    el.style.fontWeight = props.fontWeight;
-  },
-};
-
-const vMudaFonte = {
-  mounted: (el) => {
-    el.style.fontFamily = props.fontFamily;
-  },
-};
 </script>
-
 <style scoped>
 .default {
   gap: 6px;
