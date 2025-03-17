@@ -1,5 +1,8 @@
 <template>
-  <div class="div-teste"><AtnInput /></div>
+  <AtnInput expand="block" icon="user" label="Label Do Input" placeholder="paceholder" />
+  <AtnInput label="Label Do Input" placeholder="paceholder" />
+  <AtnInput placeholder="paceholder" />
+  <AtnInput icon="user" placeholder="paceholder" />
 </template>
 
 <script setup>

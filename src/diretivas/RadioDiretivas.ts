@@ -1,5 +1,8 @@
+import type { DirectiveBinding } from "vue";
+
+
 export const vMudaBackgroundAtivo = {
-  mounted(el, binding) {
+  mounted(el: HTMLInputElement, binding: DirectiveBinding) {
     const { backgroundColorActive, borderColor } = binding.value;
     if (el.checked) {
       el.style.setProperty("--checked-radio", backgroundColorActive);
@@ -8,7 +11,7 @@ export const vMudaBackgroundAtivo = {
       el.style.borderColor = borderColor;
     }
   },
-  updated(el, binding) {
+  updated(el: HTMLInputElement, binding: DirectiveBinding) {
     const { backgroundColorActive, borderColor } = binding.value;
     if (el.checked) {
       el.style.setProperty("--checked-radio", backgroundColorActive);

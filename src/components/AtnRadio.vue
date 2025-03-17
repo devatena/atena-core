@@ -1,42 +1,36 @@
 <template>
-  <div class="radio-div">
-    <label v-if="props.label"
-      v-muda-fonte
-      v-muda-cor-da-fonte
-      for="radioDefault"
-      >{{ props.label }}</label
-    >
-    <div class="radio">
-      <input
-        :value="props.value"
-        :checked="props.inputValue === props.value"
-        @change="$emit('update:inputValue', props.value)"
-        v-muda-cor-da-borda="props.borderColor"
-        v-muda-background-ativo="{ backgroundColorActive: props.backgroundColorActive, borderColor: props.borderColor }"        v-muda-background="props.backgroundColor"
-        type="radio"
-        id="radioDefault"
-      />
-      <span v-muda-fonte v-muda-cor-da-fonte>{{
-        props.option
-      }}</span>
-    </div>
+  <div :class="['radio-div', type]">
+    <label v-if="props.label" v-muda-cor-da-fonte :for="`radio-${label}`">{{
+      label
+    }}</label>
+      <div class="radio" v-for="option in options" :key="option.value">
+        <input
+          type="radio"
+          :id="`radio-${option.value}`"
+          :value="option.value"
+          :checked="inputValue === option.value"
+          @change="$emit('update:inputValue', option.value)"
+          v-muda-cor-da-borda="borderColor"
+          v-muda-background-ativo="{
+            backgroundColorActive: props.backgroundColorActive,
+            borderColor: props.borderColor,
+          }"
+          v-muda-background="props.backgroundColor"
+        />
+        <span v-muda-fonte v-muda-cor-da-fonte>{{ option[optionName] }}</span>
+      </div>
   </div>
 </template>
 
 <script setup>
-import { vMudaCorDaBorda, vMudaCorDaFonte, vMudaBackground } from '../diretivas/DiretivasGlobal';
-import { vMudaBackgroundAtivo } from '../diretivas/RadioDiretivas';
+import {
+  vMudaCorDaBorda,
+  vMudaCorDaFonte,
+} from "../diretivas/DiretivasGlobal";
+import { vMudaBackgroundAtivo } from "../diretivas/RadioDiretivas";
 
 const props = defineProps({
   label: {
-    type: String,
-    default: "",
-  },
-  fontFamily: {
-    type: String,
-    default: "",
-  },
-  backgroundColor: {
     type: String,
     default: "",
   },
@@ -44,9 +38,13 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  option: {
+  options: {
+    type: Array,
+    default: () => [],
+  },
+  optionName: {
     type: String,
-    default: "",
+    default: "option",
   },
   fontColor: {
     type: String,
@@ -64,10 +62,14 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  display:{
+  display: {
     type: String,
     default: "",
-  }
+  },
+  type: {
+    type: String,
+    default: "",
+  },
 });
 
 defineEmits(["update:inputValue"]);
@@ -75,6 +77,7 @@ defineEmits(["update:inputValue"]);
 
 <style scoped>
 .radio-div {
+  font-family: Poppins;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -85,7 +88,7 @@ input[type="radio"] {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 2px solid #ccc;
+  border: 1px solid #707070;
   background-color: transparent;
   appearance: none;
   position: relative;
@@ -93,22 +96,13 @@ input[type="radio"] {
   margin: 0;
 }
 
-input[type="radio"]:checked {
-  background-color: #fff;
+ input[type="radio"]:checked {
   border-color: var(--checked-radio, #007bff);
 }
 
 input[type="radio"]:checked::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
   background-color: var(--checked-radio, #007bff);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+} 
 
 input[type="radio"]:checked::after {
   content: "";
@@ -123,9 +117,11 @@ input[type="radio"]:checked::after {
 }
 label {
   font-size: 14px;
+  color: #4e4e4e;
 }
 span {
   font-size: 10px;
+  color: #848484;
 }
 .radio {
   display: flex;
@@ -136,5 +132,6 @@ span {
 .column {
   display: flex;
   flex-direction: column;
+  align-items: start
 }
 </style>

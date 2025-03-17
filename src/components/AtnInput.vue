@@ -1,26 +1,41 @@
 <template>
-  <div :class="['', expand]">
-    <label v-if="props.label"
+    <label
+      v-if="props.label"
       v-label-fonte-weight="labelFontWeight"
       v-muda-cor-do-label="labelColor"
       for="inputDefault"
       >{{ props.label }}</label
     >
-    <input
-      :class="['default', type]"
-      v-model="model"
-      v-muda-cor-do-placeholder="placeholderColor"
-      v-muda-background="backgroundColor"
-      v-muda-cor-da-fonte="fontColor"
-      id="inputDefault"
-      :placeholder="placeholder"
-    />
-  </div>
+    <div v-muda-background="backgroundColor" :class="['input', expand]">
+      <FontAwesomeIcon class="icon" v-if="icon" :icon="['fas', icon]" />
+      <input
+        class="default"
+        v-model="model"
+        v-muda-background="backgroundColor"
+        v-muda-cor-do-placeholder="placeholderColor"
+        v-muda-cor-da-fonte="fontColor"
+        id="inputDefault"
+        :placeholder="placeholder"
+      />
+    </div>
 </template>
 
 <script setup>
-import { vMudaCorDoLabel, vMudaCorDoPlaceholder, vLabelFonteWeight} from "../diretivas/InputDiretivas"
+import {
+  vMudaCorDoLabel,
+  vMudaCorDoPlaceholder,
+  vLabelFonteWeight,
+} from "../diretivas/InputDiretivas";
 import { vMudaBackground, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import * as solidIcons from "@fortawesome/free-solid-svg-icons";
+
+const validSolidIcons = Object.values(solidIcons).filter(
+  (icon) => icon.iconName !== undefined
+);
+
+library.add(...validSolidIcons);
 
 const props = defineProps({
   placeholder: {
@@ -67,6 +82,10 @@ const props = defineProps({
     type: String,
     default: "solid",
   },
+  icon: {
+    type: String,
+    default: "",
+  },
 });
 
 const model = defineModel();
@@ -74,19 +93,21 @@ const model = defineModel();
 
 <style scoped>
 .default {
-  background-color: #f3f3f3;
-  border-radius: 15px;
+  font-family: Poppins;
+  background-color: var(--bg-color, #F3F3F3);
   border: none;
   outline: none;
   color: black;
   box-sizing: border-box;
-  padding: 10px;
   font-size: 10px;
+  border-radius: 15px;
   width: 100%;
 }
 
 .default::placeholder {
-  color: var(--placeholder-color, #999);
+  color: var(--placeholder-color, #4e4e4e);
+  font-family: Poppins;
+  font-weight: 300;
 }
 
 .default::placeholder {
@@ -99,21 +120,24 @@ const model = defineModel();
 
 .icon {
   width: 20px;
+  color: #a50087;
 }
 
 label {
-  font-family: sans-serif;
+  font-family: Poppins;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 16px;
+  color: #4e4e4e;
 }
 
-div {
-  gap: 11px;
+.input{
+  background-color: #F3F3F3;
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 10px 13px 15px;
 }
-.outline {
-  background-color: transparent;
-  border: 1px solid rgb(63, 28, 146);
-}
+
 </style>

@@ -1,17 +1,8 @@
 <template>
-  <AtnButton>botao de teste</AtnButton>
-  <AtnButton
-    type="secondary"
-    >botao de teste</AtnButton
-  >
-  <AtnButton
-
-    fontWeight="600"
-    backgroundColor="blue"
-    fontColor="white"
-    expand="block"
-    >botao de teste</AtnButton
-  >
+  <AtnButton icon="user">botao de teste</AtnButton>
+  <AtnButton expand="block" type="secondary">botao de teste</AtnButton>
+  <AtnButton expand="block" type="outline">botao de teste</AtnButton>
+  <AtnButton icon="house" type="circle"></AtnButton>
 </template>
 
 <script setup>

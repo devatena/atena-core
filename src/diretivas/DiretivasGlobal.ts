@@ -1,24 +1,25 @@
+import type { DirectiveBinding } from "vue";
 
 export const vFonteWeight = {
-    mounted: (el, binding) => {
+    mounted: (el: HTMLElement, binding: DirectiveBinding) => {
       el.style.fontWeight = binding.value;
     },
   };
   
   export const vMudaCorDaFonte = {
-    mounted: (el, binding) => {
+    mounted: (el: HTMLElement, binding: DirectiveBinding) => {
       el.style.color = binding.value;
     },
   };
   
   export const vMudaBackground = {
-    mounted: (el, binding) => {
+    mounted: (el: HTMLElement, binding: DirectiveBinding) => {
       el.style.setProperty("--bg-color", binding.value);
     },
   };
   
 export const vMudaCorDaBorda = {
-  mounted: (el, binding) => {
+  mounted: (el: HTMLElement, binding: DirectiveBinding) => {
     el.style.borderColor = binding.value;
   },
 };

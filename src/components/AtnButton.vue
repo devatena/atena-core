@@ -6,12 +6,22 @@
     v-fonte-weight="fontWeight"
     :class="['default', expand, type]"
   >
+  <font-awesome-icon class="icon" v-if="icon" :icon="['fas', icon]" />
     <slot></slot>
   </button>
 </template>
 <script setup>
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { vMudaCorDaFonte, vMudaBackground, vFonteWeight, vMudaCorDaBorda } from "../diretivas/DiretivasGlobal"
+import { library } from "@fortawesome/fontawesome-svg-core";
+import * as solidIcons from '@fortawesome/free-solid-svg-icons';
+
+const validSolidIcons = Object.values(solidIcons).filter(
+  (icon) => icon.iconName !== undefined
+);
+
+library.add(...validSolidIcons);
 
 defineProps({
   expand: {
@@ -22,7 +32,7 @@ defineProps({
     type: String,
     default: "",
   },
-  icone: {
+  icon: {
     type: String,
     default: "",
   },
@@ -46,6 +56,7 @@ defineProps({
 </script>
 <style scoped>
 .default {
+  font-family: Poppins;
   gap: 6px;
   border: none;
   outline: none;
@@ -56,7 +67,7 @@ defineProps({
   position: relative;
   background: none;
   color: white;
-  padding: 10px;
+  padding: 14px 70px;
   cursor: pointer;
   z-index: 0;
   border-radius: 30px; 
@@ -84,19 +95,23 @@ defineProps({
 
 .default.outline {
   --bg-color: transparent;
-  border: 2px solid rgb(79, 18, 177);
-  color: rgb(60, 43, 88);
+  border: 1px solid #A50087;
+  color: #A50087;
 }
 
 .icon {
   width: 20px;
 }
-.circle{
+
+.default.circle {
+  width: 56px;      
+  height: 56px;
+  padding: 0;        
   border-radius: 50%;
 }
 
 .secondary{
-  background-color: #F0C3F4;
+  --bg-color: #F0C3F4;;
   color: #A50087;
 }
 </style>
