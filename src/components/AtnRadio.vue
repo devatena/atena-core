@@ -9,7 +9,7 @@
           :id="`radio-${option.value}`"
           :value="option.value"
           :checked="inputValue === option.value"
-          @change="$emit('update:inputValue', option.value)"
+          v-model="model"
           v-muda-cor-da-borda="borderColor"
           v-muda-background-ativo="{
             backgroundColorActive: props.backgroundColorActive,
@@ -71,13 +71,13 @@ const props = defineProps({
     default: "",
   },
 });
+const model = defineModel()
 
 defineEmits(["update:inputValue"]);
 </script>
 
 <style scoped>
 .radio-div {
-  font-family: Poppins;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -97,11 +97,11 @@ input[type="radio"] {
 }
 
  input[type="radio"]:checked {
-  border-color: var(--checked-radio, #007bff);
+  border-color: var(--checked-radio, #A50087);
 }
 
 input[type="radio"]:checked::before {
-  background-color: var(--checked-radio, #007bff);
+  background-color: var(--checked-radio, #A50087);
 } 
 
 input[type="radio"]:checked::after {
@@ -109,7 +109,7 @@ input[type="radio"]:checked::after {
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: var(--checked-radio, #007bff);
+  background-color: var(--checked-radio, #A50087);
   border-radius: 50%;
   top: 50%;
   left: 50%;

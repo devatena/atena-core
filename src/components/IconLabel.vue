@@ -77,7 +77,7 @@ import { vMudaBackground, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal"
 }
 
 p {
-  font-family: Poppins, sans-serif;
+
   color: white;
   margin: 0;
   font-size: 11px;

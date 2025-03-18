@@ -56,21 +56,19 @@ defineProps({
 </script>
 <style scoped>
 .default {
-  font-family: Poppins;
-  gap: 6px;
+  gap: 10px;
   border: none;
   outline: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: flex; 
   align-items: center;
+  justify-content: center;
   position: relative;
   background: none;
   color: white;
-  padding: 14px 70px;
+  padding: 14px 70px; 
   cursor: pointer;
   z-index: 0;
-  border-radius: 30px; 
+  border-radius: 30px;
 }
 
 .default::before {
@@ -90,6 +88,9 @@ defineProps({
 }
 
 .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -108,6 +109,9 @@ defineProps({
   height: 56px;
   padding: 0;        
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .secondary{

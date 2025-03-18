@@ -1,23 +1,24 @@
 <template>
-    <label
-      v-if="props.label"
-      v-label-fonte-weight="labelFontWeight"
-      v-muda-cor-do-label="labelColor"
-      for="inputDefault"
-      >{{ props.label }}</label
-    >
-    <div v-muda-background="backgroundColor" :class="['input', expand]">
-      <FontAwesomeIcon class="icon" v-if="icon" :icon="['fas', icon]" />
-      <input
-        class="default"
-        v-model="model"
-        v-muda-background="backgroundColor"
-        v-muda-cor-do-placeholder="placeholderColor"
-        v-muda-cor-da-fonte="fontColor"
-        id="inputDefault"
-        :placeholder="placeholder"
-      />
-    </div>
+  <label
+    v-if="props.label"
+    v-label-fonte-weight="labelFontWeight"
+    v-muda-cor-do-label="labelColor"
+    for="inputDefault"
+    >{{ props.label }}</label
+  >
+  <div v-muda-background="backgroundColor" :class="['input', expand]">
+    <FontAwesomeIcon v-muda-cor-da-fonte="fontColor" class="icon" v-if="icon" :icon="['fas', icon]" />
+    <input
+    :type="type"
+      class="default"
+      v-model="model"
+      v-muda-background="backgroundColor"
+      v-muda-cor-do-placeholder="placeholderColor"
+      v-muda-cor-da-fonte="fontColor"
+      id="inputDefault"
+      :placeholder="placeholder"
+    />
+  </div>
 </template>
 
 <script setup>
@@ -74,10 +75,6 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  gap: {
-    type: String,
-    default: "",
-  },
   type: {
     type: String,
     default: "solid",
@@ -93,51 +90,58 @@ const model = defineModel();
 
 <style scoped>
 .default {
-  font-family: Poppins;
-  background-color: var(--bg-color, #F3F3F3);
-  border: none;
-  outline: none;
+  padding-left: 10px;
+  background-color: transparent;
+   border: none; 
+  outline: none; 
   color: black;
   box-sizing: border-box;
   font-size: 10px;
   border-radius: 15px;
   width: 100%;
+  height: 100%;
+}
+
+.input:has(.default:focus){
+  background-color: #a50087;
+}
+
+.input:has(.default:focus) .default::placeholder{
+  color: white;
+}
+
+.input:has(.default:focus) .icon {
+  color: white;
 }
 
 .default::placeholder {
   color: var(--placeholder-color, #4e4e4e);
-  font-family: Poppins;
-  font-weight: 300;
 }
 
-.default::placeholder {
-  font-weight: var(--placeholder-weight, 300);
+.input {
+  background-color: var(--bg-color, #f3f3f3);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  height: 49px;
+  width: 359px;
 }
 
-.block {
+.input.block {
   width: 100%;
 }
 
 .icon {
+  margin-left: 16px;
   width: 20px;
   color: #a50087;
 }
 
 label {
-  font-family: Poppins;
   font-weight: 600;
   font-size: 16px;
   color: #4e4e4e;
 }
 
-.input{
-  background-color: #F3F3F3;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 13px 10px 13px 15px;
-}
 
 </style>

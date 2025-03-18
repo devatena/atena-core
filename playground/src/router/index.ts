@@ -1,23 +1,37 @@
-import { createWebHistory, createRouter } from 'vue-router'
-import BotaoPage from '../pages/BotaoPage.vue'
-import InputPage from '../pages/InputPage.vue'
-import RadioPage from '../pages/RadioPage.vue'
-import FormPage from '../pages/FormPage.vue'
-import FormConnectOn from '../pages/FormConnectOn.vue'
-import IconLabelPage from '../pages/IconLabelPage.vue'
+import { createWebHistory, createRouter } from "vue-router";
 
 const routes = [
-  { path: '/', component: BotaoPage },
-  { path: '/inputPageTeste', component: InputPage },
-  { path: '/radioPageTeste', component:  RadioPage},
-  { path: '/formPageTeste', component:  FormPage},
-  { path: '/formConnectOnTeste', component: FormConnectOn},
-  { path: '/iconLabel', component: IconLabelPage},
-]
+  {
+    path: "/",
+    redirect: "/layout/paginaInicial",
+  },
+  {
+    path: "/layout",
+    component: () => import("../components/LayoutComponentes.vue"),
+    children: [
+      {
+        path: "paginaInicial",
+        component: () => import("../pages/PaginaIncial.vue"),
+      },
+      {
+        path: "buttonPageTeste",
+        component: () => import("../pages/BotaoPage.vue"),
+      },
+      {
+        path: "inputPageTeste",
+        component: () => import("../pages/InputPage.vue"),
+      },
+      {
+        path: "radioPageTeste",
+        component: () => import("../pages/RadioPage.vue"),
+      },
+    ],
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-export default router
+export default router;
