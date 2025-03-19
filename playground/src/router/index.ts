@@ -25,6 +25,10 @@ const routes = [
         path: "radioPageTeste",
         component: () => import("../pages/RadioPage.vue"),
       },
+      {
+        path: "selectPageTeste",
+        component: () => import("../pages/SelectPageTeste.vue"),
+      },
     ],
   },
 ];

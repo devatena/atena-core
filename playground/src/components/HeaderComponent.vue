@@ -1,10 +1,11 @@
 <template>
   <header>
-    <div><font-awesome-icon @click="router.push('/layout/inicioPage')" class="icon" :icon="['fas', 'arrow-left']" /></div>
+    <div><font-awesome-icon @click="router.push('/layout/paginaInicial')" class="icon" :icon="['fas', 'arrow-left']" /></div>
     <div class="options-header">
       <div @click="router.push('/layout/buttonPageTeste')">Buttons</div>
       <div @click="router.push('/layout/inputPageTeste')">Inputs</div>
       <div @click="router.push('/layout/radioPageTeste')">Radios</div>
+      <div @click="router.push('/layout/selectPageTeste')">Select</div>
     </div>
   </header>
 </template>
@@ -26,7 +27,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(216, 205, 205);
+  background-color: #A50087;
   display: flex;
   align-items: center;
   justify-content: space-between;

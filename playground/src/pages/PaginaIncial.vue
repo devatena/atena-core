@@ -1,5 +1,6 @@
 <template>
   <div class="main-layout">
+    <h1>Acompanhe o DS da Atena Agência!</h1>
     <CardsComponente titulo="Botões" @click="router.push('buttonPageTeste')" />
     <CardsComponente titulo="Inputs" @click="router.push('inputPageTeste')"/>
     <CardsComponente titulo="Radios" @click="router.push('radioPageTeste')"/>
@@ -19,5 +20,6 @@ const router = useRouter();
   gap: 20px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 </style>

@@ -1,20 +1,43 @@
 <template>
-  <div class="radio2">
-    <AtnRadio
-      label="escolha uma opcao"
-      :options="radioOptions"
-      optionName="option"
-      v-model="selectedOption"
-
-    />
+  <div class="radio-main">
+    <div class="radio">
+      <h1>Radio com Label</h1>
+      <AtnRadio
+        label="escolha uma opcao"
+        :options="radioOptions"
+        optionName="option"
+        v-model="selectedOption"
+      />
+    </div>
+    <div class="radio">
+      <h1>Radio sem Label</h1>
+      <AtnRadio
+        :options="radioOptions"
+        optionName="option"
+        v-model="selectedOption"
+      />
+    </div>
+    <div class="radio">
+      <h1>Radio com Label e column</h1>
+      <AtnRadio
+        type="column"
+        label="escolha uma opcao"
+        :options="radioOptions"
+        optionName="option"
+        v-model="selectedOption"
+      />
+    </div>
+    <div class="radio">
+      <h1>Radio sem Label e column</h1>
+      <AtnRadio
+        type="column"
+        :options="radioOptions"
+        optionName="option"
+        v-model="selectedOption"
+      />
+    </div>
+    {{ selectedOption  }}
   </div>
-  <AtnRadio
-      label="escolha uma opcao"
-      :options="radioOptions"
-      optionName="option"
-      type="column"
-    />
-  <p>{{ selectedOption }}</p>
 </template>
 
 <script setup>
@@ -28,20 +51,31 @@ const radioOptions = ref([
   { value: "op2", option: "Opção 2" },
   { value: "op3", option: "Opção 3" },
 ]);
-
 </script>
 
 <style scoped>
 .radio {
-  gap: 8px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(250, 252, 252, 0.644);;
+  border-radius: 10px;
+  padding: 30px 20px;
+  gap: 10px;
+  height: 70px;
 }
-.radio2 {
-  gap: 8px;
-  display: flex;
+.radio-main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.radio3 {
-  gap: 8px;
-  display: flex;
+
+h1 {
+  margin: 0;
+  line-height: 1;
 }
 </style>

@@ -1,23 +1,32 @@
 <template>
-  <label
-    v-if="props.label"
-    v-label-fonte-weight="labelFontWeight"
-    v-muda-cor-do-label="labelColor"
-    for="inputDefault"
-    >{{ props.label }}</label
-  >
-  <div v-muda-background="backgroundColor" :class="['input', expand]">
-    <FontAwesomeIcon v-muda-cor-da-fonte="fontColor" class="icon" v-if="icon" :icon="['fas', icon]" />
-    <input
-    :type="type"
-      class="default"
-      v-model="model"
-      v-muda-background="backgroundColor"
-      v-muda-cor-do-placeholder="placeholderColor"
-      v-muda-cor-da-fonte="fontColor"
-      id="inputDefault"
-      :placeholder="placeholder"
-    />
+  <div :class="['main-input', expand]">
+    <label
+      v-if="props.label"
+      v-label-fonte-weight="labelFontWeight"
+      v-muda-cor-do-label="labelColor"
+      for="inputDefault"
+      >{{ props.label }}</label
+    >
+    <div v-muda-background="backgroundColor" class="input">
+      <FontAwesomeIcon
+        v-muda-cor-da-fonte="fontColor"
+        class="icon"
+        v-if="icon"
+        :icon="['fas', icon]"
+      />
+      <input
+        autocomplete="off"
+        :type="type"
+        class="default"
+        v-model="model"
+        v-muda-background="backgroundColor"
+        v-muda-cor-do-placeholder="placeholderColor"
+        v-muda-cor-da-fonte="fontColor"
+        v-fonte-color-focus="fontColorFocus"
+        id="inputDefault"
+        :placeholder="placeholder"
+      />
+    </div>
   </div>
 </template>
 
@@ -26,6 +35,7 @@ import {
   vMudaCorDoLabel,
   vMudaCorDoPlaceholder,
   vLabelFonteWeight,
+  vFonteColorFocus,
 } from "../diretivas/InputDiretivas";
 import { vMudaBackground, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -83,6 +93,10 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  fontColorFocus: {
+    type: String,
+    default: "",
+  },
 });
 
 const model = defineModel();
@@ -92,8 +106,8 @@ const model = defineModel();
 .default {
   padding-left: 10px;
   background-color: transparent;
-   border: none; 
-  outline: none; 
+  border: none;
+  outline: none;
   color: black;
   box-sizing: border-box;
   font-size: 10px;
@@ -102,11 +116,14 @@ const model = defineModel();
   height: 100%;
 }
 
-.input:has(.default:focus){
+.input:has(.default:focus) {
   background-color: #a50087;
 }
+.input:has(.default:focus) input {
+  color: var(--font-color-focus, #ffffff);
+}
 
-.input:has(.default:focus) .default::placeholder{
+.input:has(.default:focus) .default::placeholder {
   color: white;
 }
 
@@ -118,16 +135,21 @@ const model = defineModel();
   color: var(--placeholder-color, #4e4e4e);
 }
 
+.default:-webkit-autofill {
+  background-color: yellow !important;
+  color: black;
+}
+
 .input {
   background-color: var(--bg-color, #f3f3f3);
   border-radius: 15px;
   display: flex;
   align-items: center;
+  width: 100%;
   height: 49px;
-  width: 359px;
 }
 
-.input.block {
+.main-input.block {
   width: 100%;
 }
 
@@ -142,6 +164,17 @@ label {
   font-size: 16px;
   color: #4e4e4e;
 }
+.main-input {
+  width: 359px;
+}
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+input[type="number"] {
+  appearance: none;
+}
 </style>

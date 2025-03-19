@@ -26,12 +26,22 @@ defineProps({
 
 <style scoped>
 .main-card {
+  color: white;
   cursor: pointer;
   width: 300px;
-  height: 170px;
-  border: 1px solid gray;
+  height: 120px;
   border-radius: 10px;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #A50087, #ff69b4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.main-card:hover{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.11);
+  transform: scale(1.02);
 }
 
 h1,
@@ -39,7 +49,7 @@ p {
   margin: 0;
 }
 h1 {
-  font-size: 15px;
+  font-size: 35px;
 }
 p {
   font-size: 11px;

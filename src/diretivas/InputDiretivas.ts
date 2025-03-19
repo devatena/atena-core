@@ -23,5 +23,13 @@ export const vInputFonteWeight = {
     el.style.setProperty("--placeholder-weight", binding.value);
   },
 };
+export const vFonteColorFocus = {
+  mounted: (el: HTMLElement, binding : DirectiveBinding) => {
+    el.style.setProperty("--font-color-focus", binding.value);
+  },
+  updated: (el: HTMLElement, binding: DirectiveBinding) => {
+    el.style.setProperty("--font-color-focus", binding.value);
+  },
+};
 
 
