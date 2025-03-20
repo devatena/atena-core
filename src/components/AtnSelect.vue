@@ -2,7 +2,7 @@
   <div class="custom-select">
     <label>{{ label }}</label>
     <div class="selected-option" @click="toggleDropdown">
-      {{ selectedOption }}
+      {{ valorAtual }}
       <font-awesome-icon class="icon" :icon="['fas', 'chevron-down']" />
     </div>
     <ul v-if="isDropdownVisible" class="options-list">
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -30,30 +30,38 @@ const props = defineProps({
     type: String,
     default: "Selecione uma opção",
   },
-  selectedOption: {
+  modelValue: {
     type: String,
     default: "Selecione uma opção",
   },
   options: {
     type: Array,
     default: () => [
-      { value: "1", option: "Opção 1" },
-      { value: "2", option: "Opção 2" },
-      { value: "3", option: "Opção 3" },
+      { value: "value", option: "option" },
+      { value: "value", option: "option" },
+      { value: "value", option: "option" },
     ],
   },
 });
 
-const emit = defineEmits(["update:selectedOption"]);
-
+const emit = defineEmits(["update:modelValue"]);
+const valorAtual = ref("selecione um valor")
 const isDropdownVisible = ref(false);
+
+watch(
+  ()=> props.selectedOption,
+  (newValor) => {
+    valorAtual.value = newValor
+  }
+)
 
 function toggleDropdown() {
   isDropdownVisible.value = !isDropdownVisible.value;
 }
 
 const selectOption = (option) => {
-  emit("update:selectedOption", option.text);
+  emit("update:modelValue", option.option);
+  valorAtual.value = option.option
   isDropdownVisible.value = false;
 }
 
@@ -87,22 +95,26 @@ const selectOption = (option) => {
   left: 15px;
   width: 100%;
   background-color: #f3f3f3;
-  border: 1px solid #ccc;
   border-radius: 15px;
   padding: 0;
   margin: 0;
   z-index: 10;
 }
 
+.options-list li:first-child {
+  border-top: none;
+}
+
 .options-list li {
   list-style: none;
-  padding: 10px 15px;
+  padding: 6px 15px;
   cursor: pointer;
+  border-top: 1px solid #EAEAEA;
 }
 
 .options-list li:hover {
   background-color: #d6d3d3;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .icon {

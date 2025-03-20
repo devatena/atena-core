@@ -34,24 +34,25 @@ import { AtnButton } from "../../../src";
 <style scoped>
 .button-page {
   display: grid;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 500px 500px;
+
+  gap: 0;
   height: 100vh;
-  gap: 10px;
-}
-.button-div{
-  display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 30px 20px;
-  background-color: rgba(250, 252, 252, 0.644);
+}
+
+.button-div {  
   border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
-h1{
+
+h1 {
   margin: 0;
   line-height: 1;
 }

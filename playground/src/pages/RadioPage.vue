@@ -18,7 +18,7 @@
       />
     </div>
     <div class="radio">
-      <h1>Radio com Label e column</h1>
+      <h1>Radio com Label type column</h1>
       <AtnRadio
         type="column"
         label="escolha uma opcao"
@@ -27,13 +27,10 @@
         v-model="selectedOption"
       />
     </div>
-    <div class="radio">
-      <h1>Radio sem Label e column</h1>
+    <div class="radio nlwc">
+      <h1>Radio sem Label type column</h1>
       <AtnRadio
         type="column"
-        :options="radioOptions"
-        optionName="option"
-        v-model="selectedOption"
       />
     </div>
     {{ selectedOption  }}
@@ -57,25 +54,28 @@ const radioOptions = ref([
 .radio {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  background-color: rgba(250, 252, 252, 0.644);;
-  border-radius: 10px;
-  padding: 30px 20px;
   gap: 10px;
-  height: 70px;
+
 }
 .radio-main {
   height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  gap: 40px;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 }
 
 h1 {
   margin: 0;
   line-height: 1;
+  margin-right: 10px;
 }
+
+.nlwc {
+  margin-top: -25px;
+}
+
 </style>

@@ -6,16 +6,20 @@
     v-fonte-weight="fontWeight"
     :class="['default', expand, type]"
   >
-  <font-awesome-icon class="icon" v-if="icon" :icon="['fas', icon]" />
+    <font-awesome-icon class="icon" v-if="icon" :icon="['fas', icon]" />
     <slot></slot>
   </button>
 </template>
 <script setup>
-
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { vMudaCorDaFonte, vMudaBackground, vFonteWeight, vMudaCorDaBorda } from "../diretivas/DiretivasGlobal"
+import {
+  vMudaCorDaFonte,
+  vMudaBackground,
+  vFonteWeight,
+  vMudaCorDaBorda,
+} from "../diretivas/DiretivasGlobal";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import * as solidIcons from '@fortawesome/free-solid-svg-icons';
+import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 
 const validSolidIcons = Object.values(solidIcons).filter(
   (icon) => icon.iconName !== undefined
@@ -59,13 +63,13 @@ defineProps({
   gap: 10px;
   border: none;
   outline: none;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   background: none;
   color: white;
-  padding: 14px 70px; 
+  padding: 14px 70px;
   cursor: pointer;
   z-index: 0;
   border-radius: 30px;
@@ -80,7 +84,7 @@ defineProps({
   left: 0;
   z-index: -1;
   border-radius: 30px;
-  background-color: var(--bg-color, #A50087);
+  background-color: var(--bg-color, #a50087);
 }
 
 .default:hover::before {
@@ -96,8 +100,8 @@ defineProps({
 
 .default.outline {
   --bg-color: transparent;
-  border: 1px solid #A50087;
-  color: #A50087;
+  border: 1px solid #a50087;
+  color: #a50087;
 }
 
 .icon {
@@ -105,17 +109,17 @@ defineProps({
 }
 
 .default.circle {
-  width: 56px;      
+  width: 56px;
   height: 56px;
-  padding: 0;        
+  padding: 0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.secondary{
-  --bg-color: #F0C3F4;;
-  color: #A50087;
+.secondary {
+  --bg-color: #f0c3f4;
+  color: #a50087;
 }
 </style>

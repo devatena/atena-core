@@ -4,7 +4,7 @@
       v-if="props.label"
       v-label-fonte-weight="labelFontWeight"
       v-muda-cor-do-label="labelColor"
-      for="inputDefault"
+      for="custom-input"
       >{{ props.label }}</label
     >
     <div v-muda-background="backgroundColor" class="input">
@@ -15,7 +15,9 @@
         :icon="['fas', icon]"
       />
       <input
-        autocomplete="off"
+        autocomplete="new-password"
+        name="mensin"
+        id="mensin"
         :type="type"
         class="default"
         v-model="model"
@@ -23,7 +25,6 @@
         v-muda-cor-do-placeholder="placeholderColor"
         v-muda-cor-da-fonte="fontColor"
         v-fonte-color-focus="fontColorFocus"
-        id="inputDefault"
         :placeholder="placeholder"
       />
     </div>
@@ -87,7 +88,7 @@ const props = defineProps({
   },
   type: {
     type: String,
-    default: "solid",
+    default: "",
   },
   icon: {
     type: String,
@@ -177,4 +178,5 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   appearance: none;
 }
+
 </style>

@@ -3,30 +3,27 @@
     <label v-if="props.label" v-muda-cor-da-fonte :for="`radio-${label}`">{{
       label
     }}</label>
-      <div class="radio" v-for="option in options" :key="option.value">
-        <input
-          type="radio"
-          :id="`radio-${option.value}`"
-          :value="option.value"
-          :checked="inputValue === option.value"
-          v-model="model"
-          v-muda-cor-da-borda="borderColor"
-          v-muda-background-ativo="{
-            backgroundColorActive: props.backgroundColorActive,
-            borderColor: props.borderColor,
-          }"
-          v-muda-background="props.backgroundColor"
-        />
-        <span v-muda-fonte v-muda-cor-da-fonte>{{ option[optionName] }}</span>
-      </div>
+    <div class="radio" v-for="option in options" :key="option.value">
+      <input
+        type="radio"
+        :id="`radio-${option.value}`"
+        :value="option.value"
+        :checked="inputValue === option.value"
+        v-model="model"
+        v-muda-cor-da-borda="borderColor"
+        v-muda-background-ativo="{
+          backgroundColorActive: props.backgroundColorActive,
+          borderColor: props.borderColor,
+        }"
+        v-muda-background="props.backgroundColor"
+      />
+      <span v-muda-fonte v-muda-cor-da-fonte>{{ option[optionName] }}</span>
+    </div>
   </div>
 </template>
 
 <script setup>
-import {
-  vMudaCorDaBorda,
-  vMudaCorDaFonte,
-} from "../diretivas/DiretivasGlobal";
+import { vMudaCorDaBorda, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
 import { vMudaBackgroundAtivo } from "../diretivas/RadioDiretivas";
 
 const props = defineProps({
@@ -40,7 +37,11 @@ const props = defineProps({
   },
   options: {
     type: Array,
-    default: () => [],
+    default: () => [
+      { value: "value", option: "option" },
+      { value: "value", option: "option" },
+      { value: "value", option: "option" },
+    ],
   },
   optionName: {
     type: String,
@@ -71,7 +72,7 @@ const props = defineProps({
     default: "",
   },
 });
-const model = defineModel()
+const model = defineModel();
 
 defineEmits(["update:inputValue"]);
 </script>
@@ -96,20 +97,20 @@ input[type="radio"] {
   margin: 0;
 }
 
- input[type="radio"]:checked {
-  border-color: var(--checked-radio, #A50087);
+input[type="radio"]:checked {
+  border-color: var(--checked-radio, #a50087);
 }
 
 input[type="radio"]:checked::before {
-  background-color: var(--checked-radio, #A50087);
-} 
+  background-color: var(--checked-radio, #a50087);
+}
 
 input[type="radio"]:checked::after {
   content: "";
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: var(--checked-radio, #A50087);
+  background-color: var(--checked-radio, #a50087);
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -132,6 +133,6 @@ span {
 .column {
   display: flex;
   flex-direction: column;
-  align-items: start
+  align-items: start;
 }
 </style>
