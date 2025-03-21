@@ -33,7 +33,6 @@
         type="column"
       />
     </div>
-    {{ selectedOption  }}
   </div>
 </template>
 

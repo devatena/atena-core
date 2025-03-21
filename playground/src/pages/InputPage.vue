@@ -1,4 +1,6 @@
 <template>
+  <input type="email" name="fake_email" style="display:none" aria-hidden="true">
+  <input type="password" name="fake_password" style="display:none" aria-hidden="true">
   <form autocomplete="off" class="input-page">
     <div class="input-div">
       <h1>input com label e icone</h1>

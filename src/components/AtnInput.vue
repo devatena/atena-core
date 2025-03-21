@@ -9,18 +9,18 @@
     >
     <div v-muda-background="backgroundColor" class="input">
       <FontAwesomeIcon
-        v-muda-cor-da-fonte="fontColor"
+        v-muda-cor-da-fonte="iconColor"
         class="icon"
         v-if="icon"
         :icon="['fas', icon]"
       />
       <input
-        autocomplete="new-password"
-        name="mensin"
-        id="mensin"
         :type="type"
         class="default"
         v-model="model"
+        name="nameAleatorio"
+        id="idAleatorio"
+        autocomplete="off"
         v-muda-background="backgroundColor"
         v-muda-cor-do-placeholder="placeholderColor"
         v-muda-cor-da-fonte="fontColor"
@@ -82,10 +82,6 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  placeholderFontWeight: {
-    type: String,
-    default: "",
-  },
   type: {
     type: String,
     default: "",
@@ -95,6 +91,10 @@ const props = defineProps({
     default: "",
   },
   fontColorFocus: {
+    type: String,
+    default: "",
+  },
+  iconColor: {
     type: String,
     default: "",
   },

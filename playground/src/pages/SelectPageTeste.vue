@@ -14,6 +14,18 @@
         />
       </div>
     </div>
+    <div class="select-div">
+      <h1>Expandido</h1>
+      <div class="expand">
+        <AtnSelect
+        label="select com expand"
+          extend="block"
+          v-model="opcaoSelecionada"
+          :options="minhasOpcoes"
+          optionName="option"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,20 +43,24 @@ const minhasOpcoes = [
 </script>
 
 <style scoped>
+.select-main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 70px; 
+}
+
 .select-div {
-  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.select-main {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
+.expand{
+  width: 400px;
 }
+
 </style>

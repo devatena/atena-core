@@ -1,9 +1,9 @@
 <template>
-  <div class="custom-select">
-    <label>{{ label }}</label>
+  <div :class="['custom-select', extend]" ref="selectContainer">
+    <label v-if="props.label">{{ label }}</label>
     <div class="selected-option" @click="toggleDropdown">
       {{ valorAtual }}
-      <font-awesome-icon class="icon" :icon="['fas', 'chevron-down']" />
+      <font-awesome-icon v-muda-cor-da-fonte="iconColor" class="icon" :icon="['fas', 'chevron-down']" />
     </div>
     <ul v-if="isDropdownVisible" class="options-list">
       <li
@@ -18,7 +18,8 @@
 </template>
 
 <script setup>
-import { ref, watch } from "vue";
+import { ref, onMounted } from "vue";
+import { vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -28,7 +29,7 @@ library.add(faChevronDown);
 const props = defineProps({
   label: {
     type: String,
-    default: "Selecione uma opção",
+    default: "",
   },
   modelValue: {
     type: String,
@@ -42,18 +43,20 @@ const props = defineProps({
       { value: "value", option: "option" },
     ],
   },
+  extend:{
+    type: String,
+    default: "",
+  },
+  iconColor:{
+    type: String,
+    default: "",
+  }
 });
 
 const emit = defineEmits(["update:modelValue"]);
 const valorAtual = ref("selecione um valor")
 const isDropdownVisible = ref(false);
-
-watch(
-  ()=> props.selectedOption,
-  (newValor) => {
-    valorAtual.value = newValor
-  }
-)
+const selectContainer = ref(null)
 
 function toggleDropdown() {
   isDropdownVisible.value = !isDropdownVisible.value;
@@ -65,9 +68,20 @@ const selectOption = (option) => {
   isDropdownVisible.value = false;
 }
 
+const removeDropDown = (element) => {
+  if (!selectContainer.value.contains(element.target)) {
+    isDropdownVisible.value = false;
+  }
+};
+
+onMounted(() => {
+  document.addEventListener("click", removeDropDown);
+});
+
 </script>
 
 <style scoped>
+
 .custom-select {
   position: relative;
   width: 200px;
@@ -121,4 +135,9 @@ const selectOption = (option) => {
   color: #a50087;
   font-size: 16px;
 }
+
+.block {
+  width: 100%;
+}
+
 </style>

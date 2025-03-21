@@ -3,10 +3,10 @@
     <label v-if="props.label" v-muda-cor-da-fonte :for="`radio-${label}`">{{
       label
     }}</label>
-    <div class="radio" v-for="option in options" :key="option.value">
+    <div class="radio" v-for="(option, index) in options" :key="index">
       <input
         type="radio"
-        :id="`radio-${option.value}`"
+        :id="`radio-${uniqueId}`"
         :value="option.value"
         :checked="inputValue === option.value"
         v-model="model"
@@ -47,10 +47,6 @@ const props = defineProps({
     type: String,
     default: "option",
   },
-  fontColor: {
-    type: String,
-    default: "",
-  },
   borderColor: {
     type: String,
     default: "",
@@ -63,16 +59,13 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  display: {
-    type: String,
-    default: "",
-  },
   type: {
     type: String,
     default: "",
   },
 });
 const model = defineModel();
+const uniqueId = (crypto.randomUUID())
 
 defineEmits(["update:inputValue"]);
 </script>

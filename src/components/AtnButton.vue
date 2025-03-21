@@ -6,7 +6,7 @@
     v-fonte-weight="fontWeight"
     :class="['default', expand, type]"
   >
-    <font-awesome-icon class="icon" v-if="icon" :icon="['fas', icon]" />
+    <font-awesome-icon v-muda-cor-da-fonte="iconColor" class="icon" v-if="icon" :icon="['fas', icon]" />
     <slot></slot>
   </button>
 </template>
@@ -56,6 +56,11 @@ defineProps({
     type: String,
     default: "solid",
   },
+  iconColor:{
+    type: String,
+    default: "",
+  }
+  
 });
 </script>
 <style scoped>

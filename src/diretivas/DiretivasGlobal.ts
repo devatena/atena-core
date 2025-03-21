@@ -17,7 +17,7 @@ export const vFonteWeight = {
       el.style.setProperty("--bg-color", binding.value);
     },
   };
-  
+
 export const vMudaCorDaBorda = {
   mounted: (el: HTMLElement, binding: DirectiveBinding) => {
     el.style.borderColor = binding.value;
