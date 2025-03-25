@@ -29,6 +29,14 @@ const routes = [
         path: "selectPageTeste",
         component: () => import("../pages/SelectPageTeste.vue"),
       },
+      {
+        path: "checkboxPageTeste",
+        component: () => import("../pages/CkeckboxPage.vue"),
+      },
+      {
+        path: "form",
+        component: () => import("../pages/FormConnectOn.vue"),
+      },
     ],
   },
 ];

@@ -6,6 +6,7 @@
       <div @click="router.push('/layout/inputPageTeste')">Inputs</div>
       <div @click="router.push('/layout/radioPageTeste')">Radios</div>
       <div @click="router.push('/layout/selectPageTeste')">Select</div>
+      <div @click="router.push('/layout/checkboxPageTeste')">Checkbox</div>
     </div>
   </header>
 </template>

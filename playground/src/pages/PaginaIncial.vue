@@ -12,6 +12,10 @@
         titulo="Selects"
         @click="router.push('selectPageTeste')"
       />
+      <CardsComponente
+        titulo="Checkbox"
+        @click="router.push('checkboxPageTeste')"
+      />
     </div>
   </div>
 </template>
@@ -38,8 +42,14 @@ const router = useRouter();
   gap: 40px;
 }
 
-h1 {
+h1  {
   grid-column: span 2;
   text-align: center;
 }
+
+.cards > :last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
 </style>
