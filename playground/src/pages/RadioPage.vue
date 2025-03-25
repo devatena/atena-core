@@ -14,7 +14,7 @@
       <AtnRadio
         :options="radioOptions"
         optionName="option"
-        v-model="selectedOption"
+        v-model="selecao2"
       />
     </div>
     <div class="radio">
@@ -41,6 +41,7 @@ import { AtnRadio } from "../../../src";
 import { ref } from "vue";
 
 const selectedOption = ref("");
+const selecao2 = ref("");
 
 const radioOptions = ref([
   { value: "op1", option: "Opção 1" },

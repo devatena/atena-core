@@ -4,7 +4,7 @@
     v-muda-cor-da-fonte="fontColor"
     v-muda-background="backgroundColor"
     v-fonte-weight="fontWeight"
-    :class="['default', expand, type]"
+    :class="['deafault', expand, type]"
   >
     <font-awesome-icon v-muda-cor-da-fonte="iconColor" class="icon" v-if="icon" :icon="['fas', icon]" />
     <slot></slot>
@@ -27,7 +27,7 @@ const validSolidIcons = Object.values(solidIcons).filter(
 
 library.add(...validSolidIcons);
 
-defineProps({
+const props = defineProps({
   expand: {
     type: String,
     default: "",
@@ -62,9 +62,12 @@ defineProps({
   }
   
 });
+
 </script>
+
 <style scoped>
-.default {
+
+.deafault {
   gap: 10px;
   border: none;
   outline: none;
@@ -73,14 +76,14 @@ defineProps({
   justify-content: center;
   position: relative;
   background: transparent;
-  color: white;
+  color: var(--primary-text-color);
   padding: 14px 70px;
   cursor: pointer;
   z-index: 0;
   border-radius: 30px;
 }
 
-.default::before {
+.deafault::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -89,10 +92,10 @@ defineProps({
   left: 0;
   z-index: -1;
   border-radius: 30px;
-  background-color: var(--bg-color, #a50087);
+  background-color: var(--primary-bg-color, #a50087);
 }
 
-.default:hover::before {
+.deafault:hover::before {
   filter: contrast(0.75);
 }
 
@@ -103,17 +106,17 @@ defineProps({
   width: 100%;
 }
 
-.default.outline {
-  --bg-color: rgba(255, 255, 255, 0.1);
+.deafault.outline {
+  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid #a50087;
-  color: #a50087;
+  color: var(--primary-text-color);
 }
 
 .icon {
   width: 20px;
 }
 
-.default.circle {
+.deafault.circle {
   width: 56px;
   height: 56px;
   padding: 0;
@@ -124,7 +127,13 @@ defineProps({
 }
 
 .secondary {
-  --bg-color: #f0c3f4;
-  color: #a50087;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
 }
+
+.primary {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
 </style>

@@ -2,8 +2,8 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import router from './router'
-
-
-createApp(App)
+import buttonThemePlugin from "../../src/plugin"
+const app = createApp(App)
 .use(router)
-.mount('#app')
+.use(buttonThemePlugin)
+app.mount('#app')

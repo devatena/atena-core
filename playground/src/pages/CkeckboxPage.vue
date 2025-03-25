@@ -2,7 +2,7 @@
   <div class="checkboxpage">
     <div class="checkbox">
       <h1>Checkbox com label</h1>
-      <AtnCheckBox 
+      <AtnCheckbox 
       v-model="valoratual" 
       :options="options"
       optionName="option" 
@@ -10,22 +10,22 @@
     </div>
     <div class="checkbox">
       <h1>Checkbox sem label</h1>
-      <AtnCheckBox/>
+      <AtnCheckbox/>
     </div>
     <div class="checkbox">
       <h1>Checkbox sem label e column</h1>
-      <AtnCheckBox type="column" />
+      <AtnCheckbox type="column" />
     </div>
     <div class="checkbox">
       <h1>Checkbox com label e column</h1>
-      <AtnCheckBox type="column" label="checbox" />
+      <AtnCheckbox type="column" label="checbox" />
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import { AtnCheckBox } from "../../../src";
+import { AtnCheckbox } from "../../../src";
 
 const valoratual = ref([]);
 
