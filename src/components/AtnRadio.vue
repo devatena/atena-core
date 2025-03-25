@@ -1,6 +1,6 @@
 <template>
   <div :class="['radio-div', type]">
-    <label v-if="props.label" v-muda-cor-da-fonte :for="`radio-${label}`">{{
+    <label v-if="props.label" v-muda-cor-da-fonte="fontColor" :for="`radio-${label}`">{{
       label
     }}</label>
     <div class="radio" v-for="(option, index) in options" :key="index">
@@ -8,7 +8,6 @@
         type="radio"
         :id="`radio-${uniqueId}`"
         :value="option.value"
-        :checked="inputValue === option.value"
         v-model="model"
         v-muda-cor-da-borda="borderColor"
         v-muda-background-ativo="{
@@ -17,7 +16,7 @@
         }"
         v-muda-background="props.backgroundColor"
       />
-      <span v-muda-fonte v-muda-cor-da-fonte>{{ option[optionName] }}</span>
+      <span v-muda-cor-da-fonte="fontColor">{{ option[optionName] }}</span>
     </div>
   </div>
 </template>
@@ -51,10 +50,6 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  inputValue: {
-    type: String,
-    default: "",
-  },
   value: {
     type: String,
     default: "",
@@ -63,6 +58,10 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  fontColor: {
+    type: String,
+    default: "",
+  }
 });
 const model = defineModel();
 const uniqueId = (crypto.randomUUID())

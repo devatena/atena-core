@@ -72,7 +72,7 @@ defineProps({
   align-items: center;
   justify-content: center;
   position: relative;
-  background: none;
+  background: transparent;
   color: white;
   padding: 14px 70px;
   cursor: pointer;
@@ -104,7 +104,7 @@ defineProps({
 }
 
 .default.outline {
-  --bg-color: transparent;
+  --bg-color: rgba(255, 255, 255, 0.1);
   border: 1px solid #a50087;
   color: #a50087;
 }
