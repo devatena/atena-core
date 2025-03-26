@@ -1,20 +1,32 @@
-import { App } from 'vue';
-import defaultButtonTheme from './config/buttonTheme';
+import { App } from "vue";
+import defaultButtonTheme from "./config/buttonTheme";
 
-export interface MyLibOptions {
-  buttonTheme?: Record<string, { textColor: string; bgColor: string }>;
+interface colorsConfig {
+  buttonTheme?: Record<
+    string,
+    { textColor: string; bgColor?: string ; border?: string }
+  >;
 }
 
 export default {
-  install(app: App, options: MyLibOptions = {}) {
-    const buttonTheme = { ...defaultButtonTheme, ...(options.buttonTheme || {}) };
+  install(app: App, options: colorsConfig = {}) {
+    const buttonTheme = {
+      ...defaultButtonTheme,
+      ...(options.buttonTheme || {}),
+    };
 
     const root = document.documentElement;
-    Object.entries(buttonTheme).forEach(([key, { textColor, bgColor }]) => {
-      root.style.setProperty(`--${key}-bg-color`, bgColor);
-      root.style.setProperty(`--${key}-text-color`, textColor);
-    });
+    
+    Object.entries(buttonTheme).forEach(
+      ([key, { textColor, bgColor, border }]) => {
+        root.style.setProperty(`--${key}-bg-color`, bgColor  ?? "");
+        root.style.setProperty(`--${key}-text-color`, textColor);
 
-    app.provide('buttonTheme', buttonTheme);
-  }
+        if (border) {
+          root.style.setProperty(`--${key}-border-color`, border);
+        }
+      }
+    );
+    app.provide("buttonTheme", buttonTheme);
+  },
 };

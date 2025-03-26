@@ -6,36 +6,29 @@
     </div>
     <div class="button-div">
       <h1>Botao sem icone</h1>
-      <AtnButton>botao de teste</AtnButton>
+      <AtnButton class="primary">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Botao secundario</h1>
-      <AtnButton icon="user">botao de teste</AtnButton>
+      <AtnButton type="secondary" icon="user">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Outline</h1>
-      <AtnButton >botao de teste</AtnButton>
+      <AtnButton type="outline">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Expandido</h1>
-      <AtnButton expand="block">botao de teste</AtnButton>
+      <AtnButton expand="block" type="secondary">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Botao Circular</h1>
       <AtnButton icon="house" type="circle"></AtnButton>
     </div>
-    <div class="button-div">
-      <AtnButton type="secondary">Teste lib</AtnButton>
-    </div>
   </div>
 </template>
 
 <script setup>
-import { provide } from "vue";
 import { AtnButton } from "../../../src";
-import defaultButtonTheme from "../../../src/config/buttonTheme";
-
-provide('buttonTheme', defaultButtonTheme);
 </script>
 
 <style scoped>
