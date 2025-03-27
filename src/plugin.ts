@@ -1,25 +1,25 @@
 import { App } from "vue";
-import defaultButtonTheme from "./config/buttonTheme";
+import DefaultTheme from "./config/DefautTheme";
 
 interface colorsConfig {
-  buttonTheme?: Record<
+  GlobalTheme?: Record<
     string,
-    { textColor: string; bgColor?: string ; border?: string }
+    { textColor: string; backgroundColor?: string ; border?: string }
   >;
 }
 
 export default {
   install(app: App, options: colorsConfig = {}) {
-    const buttonTheme = {
-      ...defaultButtonTheme,
-      ...(options.buttonTheme || {}),
+    const GlobalTheme = {
+      ...DefaultTheme, 
+      ...(options.GlobalTheme || {}),
     };
 
     const root = document.documentElement;
     
-    Object.entries(buttonTheme).forEach(
-      ([key, { textColor, bgColor, border }]) => {
-        root.style.setProperty(`--${key}-bg-color`, bgColor  ?? "");
+    Object.entries(GlobalTheme).forEach(
+      ([key, { textColor, backgroundColor, border }]) => {
+        root.style.setProperty(`--${key}-bg-color`, backgroundColor  ?? "");
         root.style.setProperty(`--${key}-text-color`, textColor);
 
         if (border) {
@@ -27,6 +27,6 @@ export default {
         }
       }
     );
-    app.provide("buttonTheme", buttonTheme);
+    app.provide("defaultTheme", GlobalTheme);
   },
 };

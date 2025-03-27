@@ -2,11 +2,11 @@ import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
 import router from "./router";
-import buttonThemePlugin from "../../src/plugin";
-import customButtonTheme from "../src/custom/customButtonTheme";
+import ThemePlugin from "../../src/plugin";
 
 const app = createApp(App)
   .use(router)
-  .use(buttonThemePlugin, customButtonTheme);
+  .use(ThemePlugin);
+
 
 app.mount("#app");

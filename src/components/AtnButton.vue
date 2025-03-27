@@ -10,12 +10,14 @@
 </template>
 
 <script setup>
-import defaultButtonTheme from "../config/buttonTheme";
-import { provide } from "vue";
+import defaultTheme from "../config/DefautTheme"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { vFonteWeight,  } from "../diretivas/DiretivasGlobal";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
+import { provide } from "vue"
+
+provide("themeColors", defaultTheme);
 
 const validSolidIcons = Object.values(solidIcons).filter(
   (icon) => icon.iconName !== undefined
@@ -45,8 +47,6 @@ const props = defineProps({
     default: "",
   },
 });
-
-provide("buttonTheme", defaultButtonTheme);
 
 </script>
 
