@@ -3,7 +3,10 @@
     <label v-if="props.label">{{ label }}</label>
     <div class="selected-option" @click="toggleDropdown">
       {{ valorAtual }}
-      <font-awesome-icon v-muda-cor-da-fonte="iconColor" class="icon" :icon="['fas', 'chevron-down']" />
+      <font-awesome-icon
+        :class="['icon',  type]"
+        :icon="['fas', 'chevron-down']"
+      />
     </div>
     <ul v-if="isDropdownVisible" class="options-list">
       <li
@@ -18,12 +21,14 @@
 </template>
 
 <script setup>
+import { provide } from "vue";
+import defaultTheme from "../config/DefautTheme";
 import { ref, onMounted } from "vue";
-import { vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
+provide("themeColors", defaultTheme);
 library.add(faChevronDown);
 
 const props = defineProps({
@@ -43,20 +48,20 @@ const props = defineProps({
       { value: "value", option: "option" },
     ],
   },
-  extend:{
+  extend: {
     type: String,
     default: "",
   },
-  iconColor:{
+  type: {
     type: String,
     default: "",
-  }
+  },
 });
 
 const emit = defineEmits(["update:modelValue"]);
-const valorAtual = ref("selecione um valor")
+const valorAtual = ref("selecione um valor");
 const isDropdownVisible = ref(false);
-const selectContainer = ref(null)
+const selectContainer = ref(null);
 
 function toggleDropdown() {
   isDropdownVisible.value = !isDropdownVisible.value;
@@ -64,9 +69,9 @@ function toggleDropdown() {
 
 const selectOption = (option) => {
   emit("update:modelValue", option.option);
-  valorAtual.value = option.option
+  valorAtual.value = option.option;
   isDropdownVisible.value = false;
-}
+};
 
 const removeDropDown = (element) => {
   if (!selectContainer.value.contains(element.target)) {
@@ -77,11 +82,9 @@ const removeDropDown = (element) => {
 onMounted(() => {
   document.addEventListener("click", removeDropDown);
 });
-
 </script>
 
 <style scoped>
-
 .custom-select {
   position: relative;
   width: 200px;
@@ -123,7 +126,7 @@ onMounted(() => {
   list-style: none;
   padding: 6px 15px;
   cursor: pointer;
-  border-top: 1px solid #EAEAEA;
+  border-top: 1px solid #eaeaea;
 }
 
 .options-list li:hover {
@@ -132,7 +135,7 @@ onMounted(() => {
 }
 
 .icon {
-  color: #a50087;
+  color: var(--primary-bg-color);
   font-size: 16px;
 }
 

@@ -1,10 +1,8 @@
 <template>
-  <input type="email" name="fake_email" style="display:none" aria-hidden="true">
-  <input type="password" name="fake_password" style="display:none" aria-hidden="true">
   <form autocomplete="off" class="input-page">
     <div class="input-div">
       <h1>input com label e icone</h1>
-      <AtnInput icon="user" label="Label Do Input" placeholder="placeholder" />
+      <AtnInput type="primary" icon="user" label="Label Do Input" placeholder="placeholder" />
     </div>
     <div class="input-div">
       <h1>input com label e sem icone</h1>
@@ -20,7 +18,7 @@
     </div>
     <div class="input-div">
       <h1>input sem label e com icone</h1>
-      <AtnInput type="password" icon="user" placeholder="placeholder" />
+      <AtnInput type="secondary" icon="user" placeholder="placeholder" />
     </div>
     <div class="input-div">
       <h1>Expandido</h1>
@@ -36,7 +34,9 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { AtnInput } from "../../../src";
+const inputValue = ref("");
 </script>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <button v-fonte-weight="fontWeight" :class="['default', expand, type]">
+  <button  :class="['default', expand, type]">
     <font-awesome-icon
       class="icon"
       v-if="icon"
@@ -12,7 +12,6 @@
 <script setup>
 import defaultTheme from "../config/DefautTheme"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { vFonteWeight,  } from "../diretivas/DiretivasGlobal";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 import { provide } from "vue"
@@ -131,10 +130,11 @@ const props = defineProps({
 
 .default.outline::before {
   background-color: transparent;
-  border: 1px solid var(--outline-border-color);
+  border: 1px solid var(--primary-border-color);
 }
 
 .default.outline {
-  color: var(--outline-text-color);
+  color: var(--primary-border-color);
 }
+
 </style>

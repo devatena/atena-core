@@ -1,29 +1,25 @@
 <template>
   <div :class="['radio-div', type]">
-    <label v-if="props.label" v-muda-cor-da-fonte="fontColor" :for="`radio-${label}`">{{
-      label
-    }}</label>
+    <label
+      v-if="props.label"
+      :for="`radio-${label}`"
+      >{{ label }}</label
+    >
     <div class="radio" v-for="(option, index) in options" :key="index">
       <input
         type="radio"
         :id="`radio-${uniqueId}`"
         :value="option.value"
-        v-model="model"
-        v-muda-cor-da-borda="borderColor"
-        v-muda-background-ativo="{
-          backgroundColorActive: props.backgroundColorActive,
-          borderColor: props.borderColor,
-        }"
-        v-muda-background="props.backgroundColor"
-      />
-      <span v-muda-cor-da-fonte="fontColor">{{ option[optionName] }}</span>
+        v-model="model"      />
+      <span>{{ option[optionName] }}</span>
     </div>
   </div>
 </template>
 
 <script setup>
-import { vMudaCorDaBorda, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
-import { vMudaBackgroundAtivo } from "../diretivas/RadioDiretivas";
+import { provide } from "vue";
+import defaultTheme from "../config/DefautTheme";
+provide("themeColors", defaultTheme);
 
 const props = defineProps({
   label: {
@@ -61,10 +57,10 @@ const props = defineProps({
   fontColor: {
     type: String,
     default: "",
-  }
+  },
 });
 const model = defineModel();
-const uniqueId = (crypto.randomUUID())
+const uniqueId = crypto.randomUUID();
 
 defineEmits(["update:inputValue"]);
 </script>
@@ -90,41 +86,43 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-  border-color: var(--checked-radio, #a50087);
+  border-color: var(--primary-border-color);
 }
 
-input[type="radio"]:checked::before {
-  background-color: var(--checked-radio, #a50087);
-}
 
 input[type="radio"]:checked::after {
   content: "";
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: var(--checked-radio, #a50087);
+  background-color: var(--primary-border-color);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 label {
   font-size: 14px;
   color: #4e4e4e;
 }
+
 span {
   font-size: 10px;
   color: #848484;
 }
+
 .radio {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
 }
+
 .column {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
+
 </style>

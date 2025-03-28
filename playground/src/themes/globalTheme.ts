@@ -1,21 +1,17 @@
-import themeService from "../../../src/services/setTheme"
-
 const globalTheme = {
     primary: {
         textColor: "#FFFFFF",
-        backgroundColor: "green",
-        border: "transparent",
+        backgroundColor: "#607848",
+        border: "#607848",
+        iconColor: "#c0d860",
     },
     secondary: {
-        textColor: "#A50087",
-        backgroundColor: "#F0C3F4",
-        border: "transparent",
+        textColor: "#607848",
+        backgroundColor: "#789048",
+        border: "#607848",
+        iconColor: "#c0d860",
     },
 }
 
-themeService.setTheme(globalTheme)
-
-themeService.getTheme()
-console.log("tema", themeService.getTheme())
 
 export default globalTheme

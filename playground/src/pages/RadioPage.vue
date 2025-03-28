@@ -57,8 +57,8 @@ const radioOptions = ref([
   justify-content: flex-start;
   flex-direction: column;
   gap: 10px;
-
 }
+
 .radio-main {
   height: 100vh;
   display: grid;
