@@ -1,9 +1,12 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
+import router from "./router";
+import ThemePlugin from "../../src/plugin";
+import globalTheme from "./themes/globalTheme";
 
-
-createApp(App)
+const app = createApp(App)
 .use(router)
-.mount('#app')
+.use(ThemePlugin, { globalTheme });
+
+app.mount("#app");

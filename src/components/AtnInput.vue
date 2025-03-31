@@ -2,14 +2,11 @@
   <div :class="['main-input', expand]">
     <label
       v-if="props.label"
-      v-label-fonte-weight="labelFontWeight"
-      v-muda-cor-do-label="labelColor"
       for="custom-input"
       >{{ props.label }}</label
     >
-    <div v-muda-background="backgroundColor" class="input">
+    <div class="input">
       <FontAwesomeIcon
-        v-muda-cor-da-fonte="iconColor"
         class="icon"
         v-if="icon"
         :icon="['fas', icon]"
@@ -18,13 +15,7 @@
         :type="type"
         class="default"
         v-model="model"
-        name="nameAleatorio"
-        id="idAleatorio"
         autocomplete="off"
-        v-muda-background="backgroundColor"
-        v-muda-cor-do-placeholder="placeholderColor"
-        v-muda-cor-da-fonte="fontColor"
-        v-fonte-color-focus="fontColorFocus"
         :placeholder="placeholder"
       />
     </div>
@@ -32,16 +23,13 @@
 </template>
 
 <script setup>
-import {
-  vMudaCorDoLabel,
-  vMudaCorDoPlaceholder,
-  vLabelFonteWeight,
-  vFonteColorFocus,
-} from "../diretivas/InputDiretivas";
-import { vMudaBackground, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
+import { provide } from "vue";
+import defaultTheme from "../config/DefautTheme";
+
+provide("themeColors", defaultTheme);
 
 const validSolidIcons = Object.values(solidIcons).filter(
   (icon) => icon.iconName !== undefined
@@ -62,39 +50,11 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  backgroundColor: {
-    type: String,
-    default: "",
-  },
-  fontColor: {
-    type: String,
-    default: "",
-  },
-  labelColor: {
-    type: String,
-    default: "",
-  },
-  placeholderColor: {
-    type: String,
-    default: "",
-  },
-  labelFontWeight: {
-    type: String,
-    default: "",
-  },
   type: {
     type: String,
     default: "",
   },
   icon: {
-    type: String,
-    default: "",
-  },
-  fontColorFocus: {
-    type: String,
-    default: "",
-  },
-  iconColor: {
     type: String,
     default: "",
   },
@@ -118,22 +78,23 @@ const model = defineModel();
 }
 
 .input:has(.default:focus) {
-  background-color: #a50087;
+  background-color: var(--primary-bg-color);
 }
+
 .input:has(.default:focus) input {
-  color: var(--font-color-focus, #ffffff);
+  color: var(--primary-text-color);
 }
 
 .input:has(.default:focus) .default::placeholder {
-  color: white;
+  color: var(--primary-text-color);
 }
 
 .input:has(.default:focus) .icon {
-  color: white;
+  color: var(--primary-text-color);
 }
 
 .default::placeholder {
-  color: var(--placeholder-color, #4e4e4e);
+  color: #4e4e4e;
 }
 
 .default:-webkit-autofill {
@@ -142,7 +103,7 @@ const model = defineModel();
 }
 
 .input {
-  background-color: var(--bg-color, #f3f3f3);
+  background-color: #f3f3f3;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -157,7 +118,7 @@ const model = defineModel();
 .icon {
   margin-left: 16px;
   width: 20px;
-  color: #a50087;
+  color: var(--primary-bg-color);
 }
 
 label {
@@ -165,6 +126,7 @@ label {
   font-size: 16px;
   color: #4e4e4e;
 }
+
 .main-input {
   width: 359px;
 }

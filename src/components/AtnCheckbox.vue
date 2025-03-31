@@ -1,6 +1,6 @@
 <template>
   <div :class="['checkbox-div', type]">
-    <label v-if="props.label" v-muda-cor-da-fonte="fontColor" :for="`checkbox-${label}`">{{
+    <label v-if="props.label" :for="`checkbox-${label}`">{{
       label
     }}</label>
     <div class="checkbox" v-for="(option, index) in options" :key="index">
@@ -9,17 +9,13 @@
         :id="`checkbox-${uniqueId}`"
         :value="option.value"
         v-model="model"
-        v-muda-cor-da-borda="borderColor"
-        v-muda-background="props.backgroundColor"
       />
-      <span v-muda-cor-da-fonte="fontColor" >{{ option[optionName] }}</span>
+      <span>{{ option[optionName] }}</span>
     </div>
   </div>
 </template>
 
 <script setup>
-import { vMudaCorDaBorda, vMudaCorDaFonte } from "../diretivas/DiretivasGlobal";
-
 const props = defineProps({
   label: {
     type: String,
@@ -45,10 +41,7 @@ const props = defineProps({
     type: String,
     default: "",
   },
-  fontColor:{
-    type: String,
-    default: "",
-  }
+
 });
 
 const model = defineModel();

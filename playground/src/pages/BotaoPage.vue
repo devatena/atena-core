@@ -2,11 +2,11 @@
   <div class="button-page">
     <div class="button-div">
       <h1>Botao Com icone</h1>
-      <AtnButton icon="user">botao de teste</AtnButton>
+      <AtnButton type="primary" icon="user">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Botao sem icone</h1>
-      <AtnButton>botao de teste</AtnButton>
+      <AtnButton class="primary">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Botao secundario</h1>
@@ -18,15 +18,11 @@
     </div>
     <div class="button-div">
       <h1>Expandido</h1>
-      <AtnButton expand="block">botao de teste</AtnButton>
+      <AtnButton expand="block" type="secondary">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Botao Circular</h1>
       <AtnButton icon="house" type="circle"></AtnButton>
-    </div>
-    <div class="button-div">
-      <h1>Botao Circular</h1>
-      <AtnButton type="outline" icon="house">botao</AtnButton>
     </div>
   </div>
 </template>
@@ -39,7 +35,6 @@ import { AtnButton } from "../../../src";
 .button-page {
   display: grid;
   grid-template-columns: 500px 500px;
-
   gap: 0;
   height: 100vh;
   align-items: center;

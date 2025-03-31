@@ -2,12 +2,13 @@
   <div class="select-main">
     <div class="select-div">
       <h1>Select com label</h1>
-      <AtnSelect label="Categoria" />
+      <AtnSelect         type="secondary" label="Categoria" />
     </div>
     <div class="select-div">
       <h1>Select sem label</h1>
       <div>
         <AtnSelect
+        type="primary"
           v-model="opcaoSelecionada"
           :options="minhasOpcoes"
           optionName="option"

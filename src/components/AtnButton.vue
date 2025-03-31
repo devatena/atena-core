@@ -1,25 +1,22 @@
 <template>
-  <button
-    v-muda-cor-da-borda="borderColor"
-    v-muda-cor-da-fonte="fontColor"
-    v-muda-background="backgroundColor"
-    v-fonte-weight="fontWeight"
-    :class="['default', expand, type]"
-  >
-    <font-awesome-icon v-muda-cor-da-fonte="iconColor" class="icon" v-if="icon" :icon="['fas', icon]" />
+  <button  :class="['default', expand, type]">
+    <font-awesome-icon
+      class="icon"
+      v-if="icon"
+      :icon="['fas', icon]"
+    />
     <slot></slot>
   </button>
 </template>
+
 <script setup>
+import defaultTheme from "../config/DefautTheme"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import {
-  vMudaCorDaFonte,
-  vMudaBackground,
-  vFonteWeight,
-  vMudaCorDaBorda,
-} from "../diretivas/DiretivasGlobal";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
+import { provide } from "vue"
+
+provide("themeColors", defaultTheme);
 
 const validSolidIcons = Object.values(solidIcons).filter(
   (icon) => icon.iconName !== undefined
@@ -27,24 +24,12 @@ const validSolidIcons = Object.values(solidIcons).filter(
 
 library.add(...validSolidIcons);
 
-defineProps({
+const props = defineProps({
   expand: {
     type: String,
     default: "",
   },
-  backgroundColor: {
-    type: String,
-    default: "",
-  },
   icon: {
-    type: String,
-    default: "",
-  },
-  fontColor: {
-    type: String,
-    default: "",
-  },
-  borderColor: {
     type: String,
     default: "",
   },
@@ -56,13 +41,14 @@ defineProps({
     type: String,
     default: "solid",
   },
-  iconColor:{
+  iconColor: {
     type: String,
     default: "",
-  }
-  
+  },
 });
+
 </script>
+
 <style scoped>
 .default {
   gap: 10px;
@@ -73,7 +59,7 @@ defineProps({
   justify-content: center;
   position: relative;
   background: transparent;
-  color: white;
+  color: var(--primary-text-color);
   padding: 14px 70px;
   cursor: pointer;
   z-index: 0;
@@ -89,7 +75,7 @@ defineProps({
   left: 0;
   z-index: -1;
   border-radius: 30px;
-  background-color: var(--bg-color, #a50087);
+  background-color: var(--primary-bg-color);
 }
 
 .default:hover::before {
@@ -103,14 +89,16 @@ defineProps({
   width: 100%;
 }
 
-.default.outline {
-  --bg-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #a50087;
-  color: #a50087;
-}
-
 .icon {
   width: 20px;
+}
+
+.primary .icon {
+  color: var(--primary-text-color);
+}
+
+.secondary .icon {
+  color: var(--secondary-text-color);
 }
 
 .default.circle {
@@ -123,8 +111,30 @@ defineProps({
   justify-content: center;
 }
 
-.secondary {
-  --bg-color: #f0c3f4;
-  color: #a50087;
+.secondary::before {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
 }
+
+.secondary {
+  color: var(--secondary-text-color);
+}
+
+.primary::before {
+  background-color: var(--primary-bg-color);
+}
+
+.primary {
+  color: var(--primary-text-color);
+}
+
+.default.outline::before {
+  background-color: transparent;
+  border: 1px solid var(--primary-border-color);
+}
+
+.default.outline {
+  color: var(--primary-border-color);
+}
+
 </style>
