@@ -18,7 +18,6 @@
       </li>
     </ul>
   </div>
-  {{valorAtual}}
 </template>
 
 <script setup>
@@ -144,4 +143,6 @@ onMounted(() => {
   width: 100%;
 }
 
+l
+}
 </style>
