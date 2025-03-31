@@ -1,3 +1,4 @@
+import { App } from 'vue';
 import { ComponentOptionsMixin } from 'vue';
 import { ComponentProvideOptions } from 'vue';
 import { DefineComponent } from 'vue';
@@ -103,5 +104,13 @@ readonly extend?: string | undefined;
 }, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, ComponentProvideOptions, true, {
 selectContainer: HTMLDivElement;
 }, HTMLDivElement>;
+
+declare interface ThemeOptions {
+    globalTheme?: Record<string, any>;
+}
+
+export declare const ThemePlugin: {
+    install(app: App, options?: ThemeOptions): void;
+};
 
 export { }
