@@ -1,6 +1,6 @@
 const globalTheme = {
     primary: {
-        textColor: "#FFFFFF",
+        textColor: "blue",
         backgroundColor: "#607848",
         border: "#607848",
         iconColor: "#c0d860",
