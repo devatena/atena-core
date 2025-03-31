@@ -103,7 +103,7 @@ readonly extend?: string | undefined;
 };
 }, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, ComponentProvideOptions, true, {
 selectContainer: HTMLDivElement;
-}, any>;
+}, HTMLDivElement>;
 
 declare interface ThemeOptions {
     globalTheme?: Record<string, any>;
