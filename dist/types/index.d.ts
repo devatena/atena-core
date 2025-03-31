@@ -103,8 +103,7 @@ readonly extend?: string | undefined;
 };
 }, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, ComponentProvideOptions, true, {
 selectContainer: HTMLDivElement;
-}, HTMLDivElement>;
-<<<<<<< HEAD
+}, any>;
 
 declare interface ThemeOptions {
     globalTheme?: Record<string, any>;
@@ -114,7 +113,5 @@ declare const ThemePugin: {
     install(app: App, options?: ThemeOptions): void;
 };
 export default ThemePugin;
-=======
->>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 
 export { }
