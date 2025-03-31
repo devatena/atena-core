@@ -143,6 +143,4 @@ onMounted(() => {
   width: 100%;
 }
 
-l
-}
 </style>
