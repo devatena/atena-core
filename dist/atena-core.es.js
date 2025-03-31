@@ -13014,5 +13014,6 @@ export {
   VT as AtnInput,
   jT as AtnRadio,
   YT as AtnSelect,
-  $T as ThemePlugin
+  $T as ThemePlugin,
+  m2 as defaultTheme
 };

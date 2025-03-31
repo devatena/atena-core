@@ -105,6 +105,21 @@ readonly extend?: string | undefined;
 selectContainer: HTMLDivElement;
 }, HTMLDivElement>;
 
+export declare const defaultTheme: {
+    primary: {
+        textColor: string;
+        backgroundColor: string;
+        border: string;
+        iconColor: string;
+    };
+    secondary: {
+        textColor: string;
+        backgroundColor: string;
+        border: string;
+        iconColor: string;
+    };
+};
+
 declare interface ThemeOptions {
     globalTheme?: Record<string, any>;
 }
