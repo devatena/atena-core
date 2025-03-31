@@ -1,3 +1,7 @@
 * {
     font-family: Poppins;
+}   
+
+:root{
+    --primary-text-color: #ff0000;
 }
