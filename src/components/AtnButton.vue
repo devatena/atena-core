@@ -15,7 +15,6 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 import { provide } from "vue"
-
 provide("themeColors", defaultTheme);
 
 const validSolidIcons = Object.values(solidIcons).filter(
@@ -49,7 +48,7 @@ const props = defineProps({
 
 </script>
 
-<style scoped>
+<style>
 .default {
   gap: 10px;
   border: none;
@@ -59,11 +58,11 @@ const props = defineProps({
   justify-content: center;
   position: relative;
   background: transparent;
-  color: var(--primary-text-color);
   padding: 14px 70px;
   cursor: pointer;
   z-index: 0;
   border-radius: 30px;
+  color: var(--primary-text-color);
 }
 
 .default::before {

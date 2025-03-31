@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+import { defineComponent as t3, computed as v, watch as lv, h as T9, provide as q2, createElementBlock as N, openBlock as x, normalizeClass as K, createBlock as F9, createCommentVNode as G, renderSlot as sv, unref as z2, mergeModels as t2, useModel as f3, createElementVNode as V, toDisplayString as O, withDirectives as r3, vModelDynamic as av, Fragment as z3, renderList as m3, vModelRadio as ev, ref as O1, onMounted as nv, createTextVNode as ov, createVNode as iv, vModelCheckbox as tv } from "vue";
+const m2 = {
+=======
 import { defineComponent as t3, computed as v, watch as lv, h as T9, provide as U2, createElementBlock as N, openBlock as x, normalizeClass as K, createBlock as F9, createCommentVNode as G, renderSlot as sv, unref as z2, mergeModels as t2, useModel as f3, createElementVNode as V, toDisplayString as O, withDirectives as r3, vModelDynamic as av, Fragment as z3, renderList as m3, vModelRadio as ev, ref as O1, onMounted as nv, createTextVNode as ov, createVNode as iv, vModelCheckbox as tv } from "vue";
 const q2 = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   primary: {
     textColor: "#FFFFFF",
     backgroundColor: "#A50087",
@@ -73,7 +78,11 @@ try {
 }
 const {
   userAgent: e9 = ""
+<<<<<<< HEAD
+} = L3.navigator || {}, I = L3, u = B9, n9 = D9, B2 = R9;
+=======
 } = L3.navigator || {}, I = L3, u = B9, n9 = D9, F2 = R9;
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 I.document;
 const E = !!u.documentElement && !!u.head && typeof u.addEventListener == "function" && typeof u.createElement == "function", E9 = ~e9.indexOf("MSIE") || ~e9.indexOf("Trident/");
 var mv = /fa(s|r|l|t|d|dr|dl|dt|b|k|kd|ss|sr|sl|st|sds|sdr|sdl|sdt)?[\-\ ]/, Lv = /Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp Duotone|Sharp|Kit)?.*/i, H9 = {
@@ -265,7 +274,11 @@ var mv = /fa(s|r|l|t|d|dr|dl|dt|b|k|kd|ss|sr|sl|st|sds|sdr|sdl|sdt)?[\-\ ]/, Lv 
   "kit-duotone": {
     "kit-duotone": "fakd"
   }
+<<<<<<< HEAD
+}, D2 = {
+=======
 }, B2 = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   GROUP: "duotone-group",
   SWAP_OPACITY: "swap-opacity",
   PRIMARY: "primary",
@@ -336,7 +349,11 @@ var mv = /fa(s|r|l|t|d|dr|dl|dt|b|k|kd|ss|sr|sl|st|sds|sdr|sdl|sdt)?[\-\ ]/, Lv 
     fasdl: "fa-light",
     fasdt: "fa-thin"
   }
+<<<<<<< HEAD
+}, Tv = ["fa-solid", "fa-regular", "fa-light", "fa-thin", "fa-duotone", "fa-brands"], V1 = ["fa", "fas", "far", "fal", "fat", "fad", "fadr", "fadl", "fadt", "fab", "fass", "fasr", "fasl", "fast", "fasds", "fasdr", "fasdl", "fasdt", ...wv, ...Tv], Fv = ["solid", "regular", "light", "thin", "duotone", "brands"], U9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], Bv = U9.concat([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]), Dv = [...Object.keys(Pv), ...Fv, "2xs", "xs", "sm", "lg", "xl", "2xl", "beat", "border", "fade", "beat-fade", "bounce", "flip-both", "flip-horizontal", "flip-vertical", "flip", "fw", "inverse", "layers-counter", "layers-text", "layers", "li", "pull-left", "pull-right", "pulse", "rotate-180", "rotate-270", "rotate-90", "rotate-by", "shake", "spin-pulse", "spin-reverse", "spin", "stack-1x", "stack-2x", "stack", "ul", D2.GROUP, D2.SWAP_OPACITY, D2.PRIMARY, D2.SECONDARY].concat(U9.map((c) => "".concat(c, "x"))).concat(Bv.map((c) => "w-".concat(c))), Rv = {
+=======
 }, Tv = ["fa-solid", "fa-regular", "fa-light", "fa-thin", "fa-duotone", "fa-brands"], V1 = ["fa", "fas", "far", "fal", "fat", "fad", "fadr", "fadl", "fadt", "fab", "fass", "fasr", "fasl", "fast", "fasds", "fasdr", "fasdl", "fasdt", ...wv, ...Tv], Fv = ["solid", "regular", "light", "thin", "duotone", "brands"], U9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], Bv = U9.concat([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]), Dv = [...Object.keys(Pv), ...Fv, "2xs", "xs", "sm", "lg", "xl", "2xl", "beat", "border", "fade", "beat-fade", "bounce", "flip-both", "flip-horizontal", "flip-vertical", "flip", "fw", "inverse", "layers-counter", "layers-text", "layers", "li", "pull-left", "pull-right", "pulse", "rotate-180", "rotate-270", "rotate-90", "rotate-by", "shake", "spin-pulse", "spin-reverse", "spin", "stack-1x", "stack-2x", "stack", "ul", B2.GROUP, B2.SWAP_OPACITY, B2.PRIMARY, B2.SECONDARY].concat(U9.map((c) => "".concat(c, "x"))).concat(Bv.map((c) => "w-".concat(c))), Rv = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   "Font Awesome 5 Free": {
     900: "fas",
     400: "far"
@@ -362,7 +379,11 @@ const D = "___FONT_AWESOME___", j1 = 16, q9 = "fa", _9 = "svg-inline--fa", j = "
     return !1;
   }
 })();
+<<<<<<< HEAD
+function L2(c) {
+=======
 function m2(c) {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   return new Proxy(c, {
     get(l, s) {
       return s in l ? l[s] : l[b];
@@ -373,6 +394,19 @@ const G9 = t({}, H9);
 G9[b] = t(t(t(t({}, {
   "fa-duotone": "duotone"
 }), H9[b]), o9.kit), o9["kit-duotone"]);
+<<<<<<< HEAD
+const Iv = L2(G9), X1 = t({}, hv);
+X1[b] = t(t(t(t({}, {
+  duotone: "fad"
+}), X1[b]), i9.kit), i9["kit-duotone"]);
+const f9 = L2(X1), $1 = t({}, G1);
+$1[b] = t(t({}, $1[b]), yv.kit);
+const C3 = L2($1), K1 = t({}, vv);
+K1[b] = t(t({}, K1[b]), bv.kit);
+L2(K1);
+const Uv = mv, V9 = "fa-layers-text", qv = Lv, _v = t({}, uv);
+L2(_v);
+=======
 const Iv = m2(G9), X1 = t({}, hv);
 X1[b] = t(t(t(t({}, {
   duotone: "fad"
@@ -384,6 +418,7 @@ K1[b] = t(t({}, K1[b]), bv.kit);
 m2(K1);
 const Uv = mv, V9 = "fa-layers-text", qv = Lv, _v = t({}, uv);
 m2(_v);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 const Wv = ["class", "data-prefix", "data-icon", "data-fa-transform", "data-fa-mask"], I1 = Mv, Gv = [...Nv, ...Dv], n2 = I.FontAwesomeConfig || {};
 function Vv(c) {
   var l = u.querySelector("script[" + c + "]");
@@ -1115,6 +1150,16 @@ R[D].hooks || (R[D].hooks = {});
 R[D].shims || (R[D].shims = []);
 var B = R[D];
 const $9 = [], K9 = function() {
+<<<<<<< HEAD
+  u.removeEventListener("DOMContentLoaded", K9), H2 = 1, $9.map((c) => c());
+};
+let H2 = !1;
+E && (H2 = (u.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(u.readyState), H2 || u.addEventListener("DOMContentLoaded", K9));
+function lP(c) {
+  E && (H2 ? setTimeout(c, 0) : $9.push(c));
+}
+function M2(c) {
+=======
   u.removeEventListener("DOMContentLoaded", K9), E2 = 1, $9.map((c) => c());
 };
 let E2 = !1;
@@ -1123,12 +1168,17 @@ function lP(c) {
   E && (E2 ? setTimeout(c, 0) : $9.push(c));
 }
 function L2(c) {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   const {
     tag: l,
     attributes: s = {},
     children: a = []
   } = c;
+<<<<<<< HEAD
+  return typeof c == "string" ? Y9(c) : "<".concat(l, " ").concat(Kv(s), ">").concat(a.map(M2).join(""), "</").concat(l, ">");
+=======
   return typeof c == "string" ? Y9(c) : "<".concat(l, " ").concat(Kv(s), ">").concat(a.map(L2).join(""), "</").concat(l, ">");
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 }
 function z9(c, l, s) {
   if (c && c[l] && c[l][s])
@@ -1485,7 +1535,11 @@ const ol = new CP(), xP = () => {
   parse: gP,
   library: ol,
   findIconDefinition: c3,
+<<<<<<< HEAD
+  toHtml: M2
+=======
   toHtml: L2
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 }, NP = function() {
   let c = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
   const {
@@ -1500,7 +1554,11 @@ function j2(c, l) {
     get: l
   }), Object.defineProperty(c, "html", {
     get: function() {
+<<<<<<< HEAD
+      return c.abstract.map((s) => M2(s));
+=======
       return c.abstract.map((s) => L2(s));
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     }
   }), Object.defineProperty(c, "node", {
     get: function() {
@@ -1746,7 +1804,11 @@ function s3(c, l) {
   });
 }
 const C9 = () => {
+<<<<<<< HEAD
+}, a3 = m.measurePerformance && B2 && B2.mark && B2.measure ? B2 : {
+=======
 }, a3 = m.measurePerformance && F2 && F2.mark && F2.measure ? F2 : {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   mark: C9,
   measure: C9
 }, e2 = 'FA "6.7.2"', AP = (c) => (a3.mark("".concat(e2, " ").concat(c, " begins")), () => il(c)), il = (c) => {
@@ -1756,7 +1818,11 @@ var N3 = {
   begin: AP,
   end: il
 };
+<<<<<<< HEAD
+const R2 = () => {
+=======
 const D2 = () => {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 };
 function u9(c) {
   return typeof (c.getAttribute ? c.getAttribute(j) : null) == "string";
@@ -1769,7 +1835,11 @@ function PP(c) {
   return c && c.classList && c.classList.contains && c.classList.contains(m.replacementClass);
 }
 function TP() {
+<<<<<<< HEAD
+  return m.autoReplaceSvg === !0 ? E2.replace : E2[m.autoReplaceSvg] || E2.replace;
+=======
   return m.autoReplaceSvg === !0 ? R2.replace : R2[m.autoReplaceSvg] || R2.replace;
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 }
 function FP(c) {
   return u.createElementNS("http://www.w3.org/2000/svg", c);
@@ -1797,7 +1867,11 @@ function DP(c) {
   let l = " ".concat(c.outerHTML, " ");
   return l = "".concat(l, "Font Awesome fontawesome.com "), l;
 }
+<<<<<<< HEAD
+const E2 = {
+=======
 const R2 = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   replace: function(c) {
     const l = c[0];
     if (l.parentNode)
@@ -1812,7 +1886,11 @@ const R2 = {
   nest: function(c) {
     const l = c[0], s = c[1];
     if (~u3(l).indexOf(m.replacementClass))
+<<<<<<< HEAD
+      return E2.replace(c);
+=======
       return R2.replace(c);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     const a = new RegExp("".concat(m.cssPrefix, "-.*"));
     if (delete s[0].attributes.id, s[0].attributes.class) {
       const n = s[0].attributes.class.split(" ").reduce((o, i) => (i === m.replacementClass || i.match(a) ? o.toSvg.push(i) : o.toNode.push(i), o), {
@@ -1821,7 +1899,11 @@ const R2 = {
       });
       s[0].attributes.class = n.toSvg.join(" "), n.toNode.length === 0 ? l.removeAttribute("class") : l.setAttribute("class", n.toNode.join(" "));
     }
+<<<<<<< HEAD
+    const e = s.map((n) => M2(n)).join(`
+=======
     const e = s.map((n) => L2(n)).join(`
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 `);
     l.setAttribute(j, ""), l.innerHTML = e;
   }
@@ -1830,7 +1912,11 @@ function d9(c) {
   c();
 }
 function fl(c, l) {
+<<<<<<< HEAD
+  const s = typeof l == "function" ? l : R2;
+=======
   const s = typeof l == "function" ? l : D2;
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   if (c.length === 0)
     s();
   else {
@@ -1848,17 +1934,30 @@ function rl() {
 function e3() {
   b3 = !1;
 }
+<<<<<<< HEAD
+let O2 = null;
+=======
 let H2 = null;
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 function x9(c) {
   if (!n9 || !m.observeMutations)
     return;
   const {
+<<<<<<< HEAD
+    treeCallback: l = R2,
+    nodeCallback: s = R2,
+    pseudoElementsCallback: a = R2,
+    observeMutationsRoot: e = u
+  } = c;
+  O2 = new n9((n) => {
+=======
     treeCallback: l = D2,
     nodeCallback: s = D2,
     pseudoElementsCallback: a = D2,
     observeMutationsRoot: e = u
   } = c;
   H2 = new n9((n) => {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     if (b3) return;
     const o = U();
     J(n).forEach((i) => {
@@ -1871,7 +1970,11 @@ function x9(c) {
           i.target.setAttribute(M3, f || o), r && i.target.setAttribute(p3, r);
         } else PP(i.target) && s(i.target);
     });
+<<<<<<< HEAD
+  }), E && O2.observe(e, {
+=======
   }), E && H2.observe(e, {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     childList: !0,
     attributes: !0,
     characterData: !0,
@@ -1879,7 +1982,11 @@ function x9(c) {
   });
 }
 function RP() {
+<<<<<<< HEAD
+  O2 && O2.disconnect();
+=======
   H2 && H2.disconnect();
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 }
 function EP(c) {
   const l = c.getAttribute("style");
@@ -2304,7 +2411,11 @@ function S9(c, l) {
           extra: g
         } = d;
         g.attributes[Y1] = l, s3(L, h).then((k) => {
+<<<<<<< HEAD
+          const F2 = g3(t(t({}, d), {}, {
+=======
           const T2 = g3(t(t({}, d), {}, {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
             icons: {
               main: k,
               mask: nl()
@@ -2314,7 +2425,11 @@ function S9(c, l) {
             extra: g,
             watchable: !0
           })), _ = u.createElementNS("http://www.w3.org/2000/svg", "svg");
+<<<<<<< HEAD
+          l === "::before" ? c.insertBefore(_, c.firstChild) : c.appendChild(_), _.outerHTML = F2.map((cv) => M2(cv)).join(`
+=======
           l === "::before" ? c.insertBefore(_, c.firstChild) : c.appendChild(_), _.outerHTML = T2.map((cv) => L2(cv)).join(`
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 `), c.removeAttribute(s), a();
         }).catch(e);
       } else
@@ -2661,7 +2776,11 @@ dP(tT, {
 w.noAuto;
 const ml = w.config, S3 = w.library;
 w.dom;
+<<<<<<< HEAD
+const I2 = w.parse;
+=======
 const O2 = w.parse;
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 w.findIconDefinition;
 w.toHtml;
 const fT = w.icon;
@@ -2703,6 +2822,15 @@ function mT(c) {
   var l = zT(c, "string");
   return typeof l == "symbol" ? l : l + "";
 }
+<<<<<<< HEAD
+function U2(c) {
+  "@babel/helpers - typeof";
+  return U2 = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(l) {
+    return typeof l;
+  } : function(l) {
+    return l && typeof Symbol == "function" && l.constructor === Symbol && l !== Symbol.prototype ? "symbol" : typeof l;
+  }, U2(c);
+=======
 function I2(c) {
   "@babel/helpers - typeof";
   return I2 = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(l) {
@@ -2710,6 +2838,7 @@ function I2(c) {
   } : function(l) {
     return l && typeof Symbol == "function" && l.constructor === Symbol && l !== Symbol.prototype ? "symbol" : typeof l;
   }, I2(c);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 }
 function y(c, l, s) {
   return l = mT(l), l in c ? Object.defineProperty(c, l, {
@@ -2771,9 +2900,15 @@ var xT = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
     var s = function(L, M, d) {
       if (!r(M) || C(M) || p(M) || h(M) || f(M))
         return M;
+<<<<<<< HEAD
+      var g, k = 0, F2 = 0;
+      if (z(M))
+        for (g = [], F2 = M.length; k < F2; k++)
+=======
       var g, k = 0, T2 = 0;
       if (z(M))
         for (g = [], T2 = M.length; k < T2; k++)
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
           g.push(s(L, M[k], d));
       else {
         g = {};
@@ -2914,6 +3049,15 @@ function yT(c) {
   });
 }
 function P9(c) {
+<<<<<<< HEAD
+  if (c && U2(c) === "object" && c.prefix && c.iconName && c.icon)
+    return c;
+  if (I2.icon)
+    return I2.icon(c);
+  if (c === null)
+    return null;
+  if (U2(c) === "object" && c.prefix && c.iconName)
+=======
   if (c && I2(c) === "object" && c.prefix && c.iconName && c.icon)
     return c;
   if (O2.icon)
@@ -2921,6 +3065,7 @@ function P9(c) {
   if (c === null)
     return null;
   if (I2(c) === "object" && c.prefix && c.iconName)
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     return c;
   if (Array.isArray(c) && c.length === 2)
     return {
@@ -3059,7 +3204,11 @@ var w3 = t3({
     }), n = v(function() {
       return i2("classes", yT(l));
     }), o = v(function() {
+<<<<<<< HEAD
+      return i2("transform", typeof l.transform == "string" ? I2.transform(l.transform) : l.transform);
+=======
       return i2("transform", typeof l.transform == "string" ? O2.transform(l.transform) : l.transform);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     }), i = v(function() {
       return i2("mask", P9(l.mask));
     }), f = v(function() {
@@ -3130,7 +3279,11 @@ t3({
     var a = s.attrs, e = ml.familyPrefix, n = v(function() {
       return i2("classes", [].concat(o3(l.counter ? ["".concat(e, "-layers-counter")] : []), o3(l.position ? ["".concat(e, "-layers-").concat(l.position)] : [])));
     }), o = v(function() {
+<<<<<<< HEAD
+      return i2("transform", typeof l.transform == "string" ? I2.transform(l.transform) : l.transform);
+=======
       return i2("transform", typeof l.transform == "string" ? O2.transform(l.transform) : l.transform);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     }), i = v(function() {
       var r = rT(l.value.toString(), P(P({}, o.value), n.value)), z = r.abstract;
       return l.counter && (z[0].attributes.class = z[0].attributes.class.replace("fa-layers-text", "")), z[0];
@@ -4059,11 +4212,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "face-grin-wink",
   icon: [512, 512, ["grin-wink"], "f58c", "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM388.1 312.8c12.3-3.8 24.3 6.9 19.3 18.7C382.4 390.6 324.2 432 256.3 432s-126.2-41.4-151.1-100.5c-5-11.8 7-22.5 19.3-18.7c39.7 12.2 84.5 19 131.8 19s92.1-6.8 131.8-19zm-16.9-79.2c-17.6-23.5-52.8-23.5-70.4 0c-5.3 7.1-15.3 8.5-22.4 3.2s-8.5-15.3-3.2-22.4c30.4-40.5 91.2-40.5 121.6 0c5.3 7.1 3.9 17.1-3.2 22.4s-17.1 3.9-22.4-3.2zM176.4 176a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"]
+<<<<<<< HEAD
+}, Fn = X4, p2 = {
+  prefix: "fas",
+  iconName: "ear-deaf",
+  icon: [512, 512, ["deaf", "deafness", "hard-of-hearing"], "f2a4", "M502.6 54.6l-40 40c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l40-40c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3zm-320 320l-128 128c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l128-128c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3zM240 128c-57.6 0-105.1 43.6-111.3 99.5c-1.9 17.6-17.8 30.2-35.3 28.3s-30.2-17.8-28.3-35.3C74.8 132.5 149.4 64 240 64c97.2 0 176 78.8 176 176c0 46-17.7 87.9-46.6 119.3c-12 13-17.4 24.8-17.4 34.7l0 6.1c0 61.9-50.1 112-112 112c-17.7 0-32-14.3-32-32s14.3-32 32-32c26.5 0 48-21.5 48-48l0-6.1c0-32.9 17.4-59.6 34.4-78c18.4-20 29.6-46.6 29.6-75.9c0-61.9-50.1-112-112-112zm0 80c-17.7 0-32 14.3-32 32c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-44.2 35.8-80 80-80s80 35.8 80 80c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-17.7-14.3-32-32-32z"]
+}, Bn = p2, Dn = p2, Rn = p2, En = {
+=======
 }, Fn = X4, M2 = {
   prefix: "fas",
   iconName: "ear-deaf",
   icon: [512, 512, ["deaf", "deafness", "hard-of-hearing"], "f2a4", "M502.6 54.6l-40 40c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l40-40c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3zm-320 320l-128 128c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l128-128c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3zM240 128c-57.6 0-105.1 43.6-111.3 99.5c-1.9 17.6-17.8 30.2-35.3 28.3s-30.2-17.8-28.3-35.3C74.8 132.5 149.4 64 240 64c97.2 0 176 78.8 176 176c0 46-17.7 87.9-46.6 119.3c-12 13-17.4 24.8-17.4 34.7l0 6.1c0 61.9-50.1 112-112 112c-17.7 0-32-14.3-32-32s14.3-32 32-32c26.5 0 48-21.5 48-48l0-6.1c0-32.9 17.4-59.6 34.4-78c18.4-20 29.6-46.6 29.6-75.9c0-61.9-50.1-112-112-112zm0 80c-17.7 0-32 14.3-32 32c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-44.2 35.8-80 80-80s80 35.8 80 80c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-17.7-14.3-32-32-32z"]
 }, Bn = M2, Dn = M2, Rn = M2, En = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "road-circle-check",
   icon: [640, 512, [], "e564", "M213.2 32L288 32l0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 74.8 0c27.1 0 51.3 17.1 60.3 42.6l42.7 120.6c-10.9-2.1-22.2-3.2-33.8-3.2c-59.5 0-112.1 29.6-144 74.8l0-42.8c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32c2.3 0 4.6-.3 6.8-.7c-4.5 15.5-6.8 31.8-6.8 48.7c0 5.4 .2 10.7 .7 16l-.7 0c-17.7 0-32 14.3-32 32l0 64L86.6 480C56.5 480 32 455.5 32 425.4c0-6.2 1.1-12.4 3.1-18.2L152.9 74.6C162 49.1 186.1 32 213.2 32zM352 368a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm211.3-43.3c-6.2-6.2-16.4-6.2-22.6 0L480 385.4l-28.7-28.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l40 40c6.2 6.2 16.4 6.2 22.6 0l72-72c6.2-6.2 6.2-16.4 0-22.6z"]
@@ -4123,11 +4284,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "bicycle",
   icon: [640, 512, [128690], "f206", "M312 32c-13.3 0-24 10.7-24 24s10.7 24 24 24l25.7 0 34.6 64-149.4 0-27.4-38C191 99.7 183.7 96 176 96l-56 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l43.7 0 22.1 30.7-26.6 53.1c-10-2.5-20.5-3.8-31.2-3.8C57.3 224 0 281.3 0 352s57.3 128 128 128c65.3 0 119.1-48.9 127-112l49 0c8.5 0 16.3-4.5 20.7-11.8l84.8-143.5 21.7 40.1C402.4 276.3 384 312 384 352c0 70.7 57.3 128 128 128s128-57.3 128-128s-57.3-128-128-128c-13.5 0-26.5 2.1-38.7 6L375.4 48.8C369.8 38.4 359 32 347.2 32L312 32zM458.6 303.7l32.3 59.7c6.3 11.7 20.9 16 32.5 9.7s16-20.9 9.7-32.5l-32.3-59.7c3.6-.6 7.4-.9 11.2-.9c39.8 0 72 32.2 72 72s-32.2 72-72 72s-72-32.2-72-72c0-18.6 7-35.5 18.6-48.3zM133.2 368l65 0c-7.3 32.1-36 56-70.2 56c-39.8 0-72-32.2-72-72s32.2-72 72-72c1.7 0 3.4 .1 5.1 .2l-24.2 48.5c-9 18.1 4.1 39.4 24.3 39.4zm33.7-48l50.7-101.3 72.9 101.2-.1 .1-123.5 0zm90.6-128l108.5 0L317 274.8 257.4 192z"]
+<<<<<<< HEAD
+}, C2 = {
+  prefix: "fas",
+  iconName: "staff-snake",
+  icon: [384, 512, ["rod-asclepius", "rod-snake", "staff-aesculapius"], "e579", "M222.6 43.2l-.1 4.8L288 48c53 0 96 43 96 96s-43 96-96 96l-40 0 0-80 40 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-40 0-28 0-4.5 144 40.5 0c53 0 96 43 96 96s-43 96-96 96l-16 0 0-80 16 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-43 0-3.1 99.5L208.5 495l0 1c-.3 8.9-7.6 16-16.5 16s-16.2-7.1-16.5-16l0-1-1-31L136 464c-22.1 0-40-17.9-40-40s17.9-40 40-40l36 0-1-32-19 0c-53 0-96-43-96-96c0-47.6 34.6-87.1 80-94.7l0 94.7c0 8.8 7.2 16 16 16l16.5 0L164 128l-28 0-13.4 0c-9 18.9-28.3 32-50.6 32l-16 0c-30.9 0-56-25.1-56-56S25.1 48 56 48l8 0 8 0 89.5 0-.1-4.8L161 32c0-.7 0-1.3 0-1.9c.5-16.6 14.1-30 31-30s30.5 13.4 31 30c0 .6 0 1.3 0 1.9l-.4 11.2zM64 112a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"]
+}, Qn = C2, Jn = C2, Zn = C2, co = {
+=======
 }, p2 = {
   prefix: "fas",
   iconName: "staff-snake",
   icon: [384, 512, ["rod-asclepius", "rod-snake", "staff-aesculapius"], "e579", "M222.6 43.2l-.1 4.8L288 48c53 0 96 43 96 96s-43 96-96 96l-40 0 0-80 40 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-40 0-28 0-4.5 144 40.5 0c53 0 96 43 96 96s-43 96-96 96l-16 0 0-80 16 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-43 0-3.1 99.5L208.5 495l0 1c-.3 8.9-7.6 16-16.5 16s-16.2-7.1-16.5-16l0-1-1-31L136 464c-22.1 0-40-17.9-40-40s17.9-40 40-40l36 0-1-32-19 0c-53 0-96-43-96-96c0-47.6 34.6-87.1 80-94.7l0 94.7c0 8.8 7.2 16 16 16l16.5 0L164 128l-28 0-13.4 0c-9 18.9-28.3 32-50.6 32l-16 0c-30.9 0-56-25.1-56-56S25.1 48 56 48l8 0 8 0 89.5 0-.1-4.8L161 32c0-.7 0-1.3 0-1.9c.5-16.6 14.1-30 31-30s30.5 13.4 31 30c0 .6 0 1.3 0 1.9l-.4 11.2zM64 112a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"]
 }, Qn = p2, Jn = p2, Zn = p2, co = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "head-side-cough-slash",
   icon: [640, 512, [], "e062", "M448 325.8l44 34.5c8.1 1.4 14.8 6.8 18 14.1L552.9 408c10.6 .4 19.5 7.6 22.2 17.4l39.1 30.6c.6 0 1.2-.1 1.8-.1c11.1 0 20.4 7.5 23.2 17.8l-3.9 0c6.2 8.5 6.4 20.4-.4 29c-8.2 10.4-23.3 12.3-33.7 4.1L9.2 42.9C-1.2 34.7-3.1 19.6 5.1 9.2S28.4-3.1 38.8 5.1L89.6 44.9C127 16.7 173.5 0 224 0l24 0c95.2 0 181.2 69.3 197.3 160.2c2.3 13 6.8 25.7 15.1 36l42 52.6c6.2 7.8 9.6 17.4 9.6 27.4c0 24.2-19.6 43.8-43.8 43.8L448 320s0 0 0 0l0 5.8zM0 224.2c0-38.7 9.8-75.1 27.1-106.9L341.8 365.3l-2.5 .3c-11 1.4-19.2 10.7-19.2 21.8c0 11.6 9 21.2 20.6 21.9l62 3.9 43 33.9C439.3 466.2 421.2 480 400 480l-80 0 0 8c0 13.3-10.7 24-24 24l-40 0s0 0 0 0L96 512c-17.7 0-32-14.3-32-32l0-72.7c0-16.7-6.9-32.5-17.1-45.8C16.6 322.4 0 274.1 0 224.2zM616 360a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm-64-48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm40-24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"]
@@ -4183,11 +4352,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "notes-medical",
   icon: [512, 512, [], "f481", "M96 352L96 96c0-35.3 28.7-64 64-64l256 0c35.3 0 64 28.7 64 64l0 197.5c0 17-6.7 33.3-18.7 45.3l-58.5 58.5c-12 12-28.3 18.7-45.3 18.7L160 416c-35.3 0-64-28.7-64-64zM272 128c-8.8 0-16 7.2-16 16l0 48-48 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l48 0 0 48c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-48 48 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-48 0 0-48c0-8.8-7.2-16-16-16l-32 0zm24 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-160 0C60.9 512 0 451.1 0 376L0 152c0-13.3 10.7-24 24-24s24 10.7 24 24l0 224c0 48.6 39.4 88 88 88l160 0z"]
+<<<<<<< HEAD
+}, u2 = {
+  prefix: "fas",
+  iconName: "temperature-half",
+  icon: [320, 512, [127777, "temperature-2", "thermometer-2", "thermometer-half"], "f2c9", "M160 64c-26.5 0-48 21.5-48 48l0 164.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5L208 112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112l0 164.4c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6L48 112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3L144 208c0-8.8 7.2-16 16-16s16 7.2 16 16l0 114.7c18.6 6.6 32 24.4 32 45.3z"]
+}, Mo = u2, po = u2, Co = u2, uo = {
+=======
 }, C2 = {
   prefix: "fas",
   iconName: "temperature-half",
   icon: [320, 512, [127777, "temperature-2", "thermometer-2", "thermometer-half"], "f2c9", "M160 64c-26.5 0-48 21.5-48 48l0 164.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5L208 112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112l0 164.4c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6L48 112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3L144 208c0-8.8 7.2-16 16-16s16 7.2 16 16l0 114.7c18.6 6.6 32 24.4 32 45.3z"]
 }, Mo = C2, po = C2, Co = C2, uo = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "dong-sign",
   icon: [384, 512, [], "e169", "M288 32c-17.7 0-32 14.3-32 32l-32 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l32 0 0 49.1c-18.8-10.9-40.7-17.1-64-17.1c-70.7 0-128 57.3-128 128s57.3 128 128 128c24.5 0 47.4-6.9 66.8-18.8c5 11.1 16.2 18.8 29.2 18.8c17.7 0 32-14.3 32-32l0-96 0-160c17.7 0 32-14.3 32-32s-14.3-32-32-32c0-17.7-14.3-32-32-32zM128 288a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l320 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 448z"]
@@ -4267,11 +4444,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "vial",
   icon: [512, 512, [129514], "f492", "M342.6 9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l9.4 9.4L28.1 342.6C10.1 360.6 0 385 0 410.5L0 416c0 53 43 96 96 96l5.5 0c25.5 0 49.9-10.1 67.9-28.1L448 205.3l9.4 9.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-32-32-96-96-32-32zM205.3 256L352 109.3 402.7 160l-96 96-101.5 0z"]
+<<<<<<< HEAD
+}, d2 = {
+  prefix: "fas",
+  iconName: "gauge",
+  icon: [512, 512, ["dashboard", "gauge-med", "tachometer-alt-average"], "f624", "M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm320 96c0-26.9-16.5-49.9-40-59.3L280 88c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 204.7c-23.5 9.5-40 32.5-40 59.3c0 35.3 28.7 64 64 64s64-28.7 64-64zM144 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm-16 80a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM400 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"]
+}, Oo = d2, Io = d2, Uo = d2, a0 = {
+=======
 }, u2 = {
   prefix: "fas",
   iconName: "gauge",
   icon: [512, 512, ["dashboard", "gauge-med", "tachometer-alt-average"], "f624", "M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm320 96c0-26.9-16.5-49.9-40-59.3L280 88c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 204.7c-23.5 9.5-40 32.5-40 59.3c0 35.3 28.7 64 64 64s64-28.7 64-64zM144 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm-16 80a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM400 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"]
 }, Oo = u2, Io = u2, Uo = u2, a0 = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "wand-magic-sparkles",
   icon: [576, 512, ["magic-wand-sparkles"], "e2ca", "M234.7 42.7L197 56.8c-3 1.1-5 4-5 7.2s2 6.1 5 7.2l37.7 14.1L248.8 123c1.1 3 4 5 7.2 5s6.1-2 7.2-5l14.1-37.7L315 71.2c3-1.1 5-4 5-7.2s-2-6.1-5-7.2L277.3 42.7 263.2 5c-1.1-3-4-5-7.2-5s-6.1 2-7.2 5L234.7 42.7zM46.1 395.4c-18.7 18.7-18.7 49.1 0 67.9l34.6 34.6c18.7 18.7 49.1 18.7 67.9 0L529.9 116.5c18.7-18.7 18.7-49.1 0-67.9L495.3 14.1c-18.7-18.7-49.1-18.7-67.9 0L46.1 395.4zM484.6 82.6l-105 105-23.3-23.3 105-105 23.3 23.3zM7.5 117.2C3 118.9 0 123.2 0 128s3 9.1 7.5 10.8L64 160l21.2 56.5c1.7 4.5 6 7.5 10.8 7.5s9.1-3 10.8-7.5L128 160l56.5-21.2c4.5-1.7 7.5-6 7.5-10.8s-3-9.1-7.5-10.8L128 96 106.8 39.5C105.1 35 100.8 32 96 32s-9.1 3-10.8 7.5L64 96 7.5 117.2zm352 256c-4.5 1.7-7.5 6-7.5 10.8s3 9.1 7.5 10.8L416 416l21.2 56.5c1.7 4.5 6 7.5 10.8 7.5s9.1-3 10.8-7.5L480 416l56.5-21.2c4.5-1.7 7.5-6 7.5-10.8s-3-9.1-7.5-10.8L480 352l-21.2-56.5c-1.7-4.5-6-7.5-10.8-7.5s-9.1 3-10.8 7.5L416 352l-56.5 21.2z"]
@@ -4883,11 +5068,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "square-binary",
   icon: [448, 512, [], "e69b", "M0 96C0 60.7 28.7 32 64 32l320 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zm144 4c-24.3 0-44 19.7-44 44l0 48c0 24.3 19.7 44 44 44l32 0c24.3 0 44-19.7 44-44l0-48c0-24.3-19.7-44-44-44l-32 0zm-4 44c0-2.2 1.8-4 4-4l32 0c2.2 0 4 1.8 4 4l0 48c0 2.2-1.8 4-4 4l-32 0c-2.2 0-4-1.8-4-4l0-48zm140-44c-11 0-20 9-20 20c0 9.7 6.9 17.7 16 19.6l0 76.4c0 11 9 20 20 20s20-9 20-20l0-96c0-11-9-20-20-20l-16 0zM132 296c0 9.7 6.9 17.7 16 19.6l0 76.4c0 11 9 20 20 20s20-9 20-20l0-96c0-11-9-20-20-20l-16 0c-11 0-20 9-20 20zm96 24l0 48c0 24.3 19.7 44 44 44l32 0c24.3 0 44-19.7 44-44l0-48c0-24.3-19.7-44-44-44l-32 0c-24.3 0-44 19.7-44 44zm44-4l32 0c2.2 0 4 1.8 4 4l0 48c0 2.2-1.8 4-4 4l-32 0c-2.2 0-4-1.8-4-4l0-48c0-2.2 1.8-4 4-4z"]
+<<<<<<< HEAD
+}, x2 = {
+  prefix: "fas",
+  iconName: "rotate-left",
+  icon: [512, 512, ["rotate-back", "rotate-backward", "undo-alt"], "f2ea", "M48.5 224L40 224c-13.3 0-24-10.7-24-24L16 72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8L48.5 224z"]
+}, Df = x2, Rf = x2, Ef = x2, K0 = {
+=======
 }, d2 = {
   prefix: "fas",
   iconName: "rotate-left",
   icon: [512, 512, ["rotate-back", "rotate-backward", "undo-alt"], "f2ea", "M48.5 224L40 224c-13.3 0-24-10.7-24-24L16 72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8L48.5 224z"]
 }, Df = d2, Rf = d2, Ef = d2, K0 = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "table-columns",
   icon: [512, 512, ["columns"], "f0db", "M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zm64 64l0 256 160 0 0-256L64 160zm384 0l-160 0 0 256 160 0 0-256z"]
@@ -5103,11 +5296,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "hill-avalanche",
   icon: [576, 512, [], "e507", "M439.7 401.9c34.2 23.1 81.1 19.5 111.4-10.8c34.4-34.4 34.4-90.1 0-124.4c-27.8-27.8-69.5-33.1-102.6-16c-11.8 6.1-16.4 20.6-10.3 32.3s20.6 16.4 32.3 10.3c15.1-7.8 34-5.3 46.6 7.3c15.6 15.6 15.6 40.9 0 56.6s-40.9 15.6-56.6 0l-81.7-81.7C401.2 261.3 416 236.4 416 208c0-33.9-21.1-62.9-50.9-74.5c1.9-6.8 2.9-14 2.9-21.5c0-44.2-35.8-80-80-80c-27.3 0-51.5 13.7-65.9 34.6C216.3 46.6 197.9 32 176 32c-26.5 0-48 21.5-48 48c0 4 .5 7.9 1.4 11.6L439.7 401.9zM480 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM68.3 87C43.1 61.8 0 79.7 0 115.3L0 432c0 44.2 35.8 80 80 80l316.7 0c35.6 0 53.5-43.1 28.3-68.3L68.3 87z"]
+<<<<<<< HEAD
+}, h2 = {
+  prefix: "fas",
+  iconName: "temperature-empty",
+  icon: [320, 512, ["temperature-0", "thermometer-0", "thermometer-empty"], "f2cb", "M112 112c0-26.5 21.5-48 48-48s48 21.5 48 48l0 164.5c0 17.3 7.1 31.9 15.3 42.5C233.8 332.6 240 349.5 240 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9c8.2-10.6 15.3-25.2 15.3-42.5L112 112zM160 0C98.1 0 48 50.2 48 112l0 164.4c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C27.2 304.2 16 334.8 16 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.2-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6L272 112C272 50.2 221.9 0 160 0zm0 416a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"]
+}, Ir = h2, Ur = h2, qr = h2, _r = {
+=======
 }, x2 = {
   prefix: "fas",
   iconName: "temperature-empty",
   icon: [320, 512, ["temperature-0", "thermometer-0", "thermometer-empty"], "f2cb", "M112 112c0-26.5 21.5-48 48-48s48 21.5 48 48l0 164.5c0 17.3 7.1 31.9 15.3 42.5C233.8 332.6 240 349.5 240 368c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-18.5 6.2-35.4 16.7-48.9c8.2-10.6 15.3-25.2 15.3-42.5L112 112zM160 0C98.1 0 48 50.2 48 112l0 164.4c0 .1-.1 .3-.2 .6c-.2 .6-.8 1.6-1.7 2.8C27.2 304.2 16 334.8 16 368c0 79.5 64.5 144 144 144s144-64.5 144-144c0-33.2-11.2-63.8-30.1-88.1c-.9-1.2-1.5-2.2-1.7-2.8c-.1-.3-.2-.5-.2-.6L272 112C272 50.2 221.9 0 160 0zm0 416a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"]
 }, Ir = x2, Ur = x2, qr = x2, _r = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "bomb",
   icon: [512, 512, [128163], "f1e2", "M459.1 52.4L442.6 6.5C440.7 2.6 436.5 0 432.1 0s-8.5 2.6-10.4 6.5L405.2 52.4l-46 16.8c-4.3 1.6-7.3 5.9-7.2 10.4c0 4.5 3 8.7 7.2 10.2l45.7 16.8 16.8 45.8c1.5 4.4 5.8 7.5 10.4 7.5s8.9-3.1 10.4-7.5l16.5-45.8 45.7-16.8c4.2-1.5 7.2-5.7 7.2-10.2c0-4.6-3-8.9-7.2-10.4L459.1 52.4zm-132.4 53c-12.5-12.5-32.8-12.5-45.3 0l-2.9 2.9C256.5 100.3 232.7 96 208 96C93.1 96 0 189.1 0 304S93.1 512 208 512s208-93.1 208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5 12.5-32.8 0-45.3l-80-80zM200 192c-57.4 0-104 46.6-104 104l0 8c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-8c0-75.1 60.9-136 136-136l8 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-8 0z"]
@@ -5715,11 +5916,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "r",
   icon: [320, 512, [114], "52", "M64 32C28.7 32 0 60.7 0 96L0 288 0 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128 95.3 0L261.8 466.4c10.1 14.5 30.1 18 44.6 7.9s18-30.1 7.9-44.6L230.1 309.5C282.8 288.1 320 236.4 320 176c0-79.5-64.5-144-144-144L64 32zM176 256L64 256 64 96l112 0c44.2 0 80 35.8 80 80s-35.8 80-80 80z"]
+<<<<<<< HEAD
+}, g2 = {
+  prefix: "fas",
+  iconName: "temperature-quarter",
+  icon: [320, 512, ["temperature-1", "thermometer-1", "thermometer-quarter"], "f2ca", "M160 64c-26.5 0-48 21.5-48 48l0 164.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5L208 112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112l0 164.4c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6L48 112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3l0-50.7c0-8.8 7.2-16 16-16s16 7.2 16 16l0 50.7c18.6 6.6 32 24.4 32 45.3z"]
+}, qL = g2, _L = g2, WL = g2, GL = {
+=======
 }, h2 = {
   prefix: "fas",
   iconName: "temperature-quarter",
   icon: [320, 512, ["temperature-1", "thermometer-1", "thermometer-quarter"], "f2ca", "M160 64c-26.5 0-48 21.5-48 48l0 164.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5L208 112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112l0 164.4c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6L48 112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3l0-50.7c0-8.8 7.2-16 16-16s16 7.2 16 16l0 50.7c18.6 6.6 32 24.4 32 45.3z"]
 }, qL = h2, _L = h2, WL = h2, GL = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "cube",
   icon: [512, 512, [], "f1b2", "M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6l0 242.9c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4L0 134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1 0-188L288 246.6l0 188z"]
@@ -6103,11 +6312,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "hands-praying",
   icon: [640, 512, ["praying-hands"], "f684", "M351.2 4.8c3.2-2 6.6-3.3 10-4.1c4.7-1 9.6-.9 14.1 .1c7.7 1.8 14.8 6.5 19.4 13.6L514.6 194.2c8.8 13.1 13.4 28.6 13.4 44.4l0 73.5c0 6.9 4.4 13 10.9 15.2l79.2 26.4C631.2 358 640 370.2 640 384l0 96c0 9.9-4.6 19.3-12.5 25.4s-18.1 8.1-27.7 5.5L431 465.9c-56-14.9-95-65.7-95-123.7L336 224c0-17.7 14.3-32 32-32s32 14.3 32 32l0 80c0 8.8 7.2 16 16 16s16-7.2 16-16l0-84.9c0-7-1.8-13.8-5.3-19.8L340.3 48.1c-1.7-3-2.9-6.1-3.6-9.3c-1-4.7-1-9.6 .1-14.1c1.9-8 6.8-15.2 14.3-19.9zm-62.4 0c7.5 4.6 12.4 11.9 14.3 19.9c1.1 4.6 1.2 9.4 .1 14.1c-.7 3.2-1.9 6.3-3.6 9.3L213.3 199.3c-3.5 6-5.3 12.9-5.3 19.8l0 84.9c0 8.8 7.2 16 16 16s16-7.2 16-16l0-80c0-17.7 14.3-32 32-32s32 14.3 32 32l0 118.2c0 58-39 108.7-95 123.7l-168.7 45c-9.6 2.6-19.9 .5-27.7-5.5S0 490 0 480l0-96c0-13.8 8.8-26 21.9-30.4l79.2-26.4c6.5-2.2 10.9-8.3 10.9-15.2l0-73.5c0-15.8 4.7-31.2 13.4-44.4L245.2 14.5c4.6-7.1 11.7-11.8 19.4-13.6c4.6-1.1 9.4-1.2 14.1-.1c3.5 .8 6.9 2.1 10 4.1z"]
+<<<<<<< HEAD
+}, Fp = F8, N2 = {
+  prefix: "fas",
+  iconName: "arrow-rotate-right",
+  icon: [512, 512, [8635, "arrow-right-rotate", "arrow-rotate-forward", "redo"], "f01e", "M386.3 160L336 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l128 0c17.7 0 32-14.3 32-32l0-128c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"]
+}, Bp = N2, Dp = N2, Rp = N2, Ep = {
+=======
 }, Fp = F8, g2 = {
   prefix: "fas",
   iconName: "arrow-rotate-right",
   icon: [512, 512, [8635, "arrow-right-rotate", "arrow-rotate-forward", "redo"], "f01e", "M386.3 160L336 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l128 0c17.7 0 32-14.3 32-32l0-128c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"]
 }, Bp = g2, Dp = g2, Rp = g2, Ep = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "web-awesome",
   icon: [640, 512, [], "e682", "M372.2 52c0 20.9-12.4 39-30.2 47.2L448 192l104.4-20.9c-5.3-7.7-8.4-17.1-8.4-27.1c0-26.5 21.5-48 48-48s48 21.5 48 48c0 26-20.6 47.1-46.4 48L481 442.3c-10.3 23-33.2 37.7-58.4 37.7l-205.2 0c-25.2 0-48-14.8-58.4-37.7L46.4 192C20.6 191.1 0 170 0 144c0-26.5 21.5-48 48-48s48 21.5 48 48c0 10.1-3.1 19.4-8.4 27.1L192 192 298.1 99.1c-17.7-8.3-30-26.3-30-47.1c0-28.7 23.3-52 52-52s52 23.3 52 52z"]
@@ -6647,11 +6864,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "volume-off",
   icon: [320, 512, [], "f026", "M320 64c0-12.6-7.4-24-18.9-29.2s-25-3.1-34.4 5.3L131.8 160 64 160c-35.3 0-64 28.7-64 64l0 64c0 35.3 28.7 64 64 64l67.8 0L266.7 471.9c9.4 8.4 22.9 10.4 34.4 5.3S320 460.6 320 448l0-384z"]
+<<<<<<< HEAD
+}, b2 = {
+  prefix: "fas",
+  iconName: "hands-asl-interpreting",
+  icon: [640, 512, ["american-sign-language-interpreting", "asl-interpreting", "hands-american-sign-language-interpreting"], "f2a3", "M156.6 46.3c7.9-15.8 1.5-35-14.3-42.9s-35-1.5-42.9 14.3L13.5 189.4C4.6 207.2 0 226.8 0 246.7L0 256c0 70.7 57.3 128 128 128l72 0 8 0 0-.3c35.2-2.7 65.4-22.8 82.1-51.7c8.8-15.3 3.6-34.9-11.7-43.7s-34.9-3.6-43.7 11.7c-7 12-19.9 20-34.7 20c-22.1 0-40-17.9-40-40s17.9-40 40-40c14.8 0 27.7 8 34.7 20c8.8 15.3 28.4 20.5 43.7 11.7s20.5-28.4 11.7-43.7c-12.8-22.1-33.6-39.1-58.4-47.1l80.8-22c17-4.6 27.1-22.2 22.5-39.3s-22.2-27.1-39.3-22.5L194.9 124.6l81.6-68c13.6-11.3 15.4-31.5 4.1-45.1S249.1-3.9 235.5 7.4L133.6 92.3l23-46zM483.4 465.7c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3l85.9-171.7c8.9-17.8 13.5-37.4 13.5-57.2l0-9.3c0-70.7-57.3-128-128-128l-72 0-8 0 0 .3c-35.2 2.7-65.4 22.8-82.1 51.7c-8.9 15.3-3.6 34.9 11.7 43.7s34.9 3.6 43.7-11.7c7-12 19.9-20 34.7-20c22.1 0 40 17.9 40 40s-17.9 40-40 40c-14.8 0-27.7-8-34.7-20c-8.9-15.3-28.4-20.5-43.7-11.7s-20.5 28.4-11.7 43.7c12.8 22.1 33.6 39.1 58.4 47.1l-80.8 22c-17.1 4.7-27.1 22.2-22.5 39.3s22.2 27.1 39.3 22.5l100.7-27.5-81.6 68c-13.6 11.3-15.4 31.5-4.1 45.1s31.5 15.4 45.1 4.1l101.9-84.9-23 46z"]
+}, dd = b2, xd = b2, hd = b2, p5 = {
+=======
 }, N2 = {
   prefix: "fas",
   iconName: "hands-asl-interpreting",
   icon: [640, 512, ["american-sign-language-interpreting", "asl-interpreting", "hands-american-sign-language-interpreting"], "f2a3", "M156.6 46.3c7.9-15.8 1.5-35-14.3-42.9s-35-1.5-42.9 14.3L13.5 189.4C4.6 207.2 0 226.8 0 246.7L0 256c0 70.7 57.3 128 128 128l72 0 8 0 0-.3c35.2-2.7 65.4-22.8 82.1-51.7c8.8-15.3 3.6-34.9-11.7-43.7s-34.9-3.6-43.7 11.7c-7 12-19.9 20-34.7 20c-22.1 0-40-17.9-40-40s17.9-40 40-40c14.8 0 27.7 8 34.7 20c8.8 15.3 28.4 20.5 43.7 11.7s20.5-28.4 11.7-43.7c-12.8-22.1-33.6-39.1-58.4-47.1l80.8-22c17-4.6 27.1-22.2 22.5-39.3s-22.2-27.1-39.3-22.5L194.9 124.6l81.6-68c13.6-11.3 15.4-31.5 4.1-45.1S249.1-3.9 235.5 7.4L133.6 92.3l23-46zM483.4 465.7c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3l85.9-171.7c8.9-17.8 13.5-37.4 13.5-57.2l0-9.3c0-70.7-57.3-128-128-128l-72 0-8 0 0 .3c-35.2 2.7-65.4 22.8-82.1 51.7c-8.9 15.3-3.6 34.9 11.7 43.7s34.9 3.6 43.7-11.7c7-12 19.9-20 34.7-20c22.1 0 40 17.9 40 40s-17.9 40-40 40c-14.8 0-27.7-8-34.7-20c-8.9-15.3-28.4-20.5-43.7-11.7s-20.5 28.4-11.7 43.7c12.8 22.1 33.6 39.1 58.4 47.1l-80.8 22c-17.1 4.7-27.1 22.2-22.5 39.3s22.2 27.1 39.3 22.5l100.7-27.5-81.6 68c-13.6 11.3-15.4 31.5-4.1 45.1s31.5 15.4 45.1 4.1l101.9-84.9-23 46z"]
 }, dd = N2, xd = N2, hd = N2, p5 = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "gear",
   icon: [512, 512, [9881, "cog"], "f013", "M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"]
@@ -6751,11 +6976,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "house-chimney-medical",
   icon: [576, 512, ["clinic-medical"], "f7f2", "M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c.2 35.5-28.5 64.3-64 64.3l-320.4 0c-35.3 0-64-28.7-64-64l0-160.4-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L416 100.7 416 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 121 52.8 46.4c8 7 12 15 11 24zM272 192c-8.8 0-16 7.2-16 16l0 48-48 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l48 0 0 48c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-48 48 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-48 0 0-48c0-8.8-7.2-16-16-16l-32 0z"]
+<<<<<<< HEAD
+}, Vd = N5, S2 = {
+  prefix: "fas",
+  iconName: "temperature-three-quarters",
+  icon: [320, 512, ["temperature-3", "thermometer-3", "thermometer-three-quarters"], "f2c8", "M160 64c-26.5 0-48 21.5-48 48l0 164.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5L208 112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112l0 164.4c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6L48 112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3L144 144c0-8.8 7.2-16 16-16s16 7.2 16 16l0 178.7c18.6 6.6 32 24.4 32 45.3z"]
+}, jd = S2, Yd = S2, Xd = S2, b5 = {
+=======
 }, Vd = N5, b2 = {
   prefix: "fas",
   iconName: "temperature-three-quarters",
   icon: [320, 512, ["temperature-3", "thermometer-3", "thermometer-three-quarters"], "f2c8", "M160 64c-26.5 0-48 21.5-48 48l0 164.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5L208 112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112l0 164.4c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6L48 112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3L144 144c0-8.8 7.2-16 16-16s16 7.2 16 16l0 178.7c18.6 6.6 32 24.4 32 45.3z"]
 }, jd = b2, Yd = b2, Xd = b2, b5 = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "mobile-screen",
   icon: [384, 512, ["mobile-android-alt"], "f3cf", "M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM144 448c0 8.8 7.2 16 16 16l64 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-64 0c-8.8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z"]
@@ -6959,11 +7192,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "heart-circle-exclamation",
   icon: [576, 512, [], "e4fe", "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9l2.6-2.4C267.2 438.6 256 404.6 256 368c0-97.2 78.8-176 176-176c28.3 0 55 6.7 78.7 18.5c.9-6.5 1.3-13 1.3-19.6l0-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1l0 5.8c0 41.5 17.2 81.2 47.6 109.5zM432 512a144 144 0 1 0 0-288 144 144 0 1 0 0 288zm0-96a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm0-144c8.8 0 16 7.2 16 16l0 80c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-80c0-8.8 7.2-16 16-16z"]
+<<<<<<< HEAD
+}, y2 = {
+  prefix: "fas",
+  iconName: "house",
+  icon: [576, 512, [127968, 63498, 63500, "home", "home-alt", "home-lg-alt"], "f015", "M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"]
+}, Xx = y2, $x = y2, Kx = y2, Qx = {
+=======
 }, S2 = {
   prefix: "fas",
   iconName: "house",
   icon: [576, 512, [127968, 63498, 63500, "home", "home-alt", "home-lg-alt"], "f015", "M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"]
 }, Xx = S2, $x = S2, Kx = S2, Qx = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "calendar-week",
   icon: [448, 512, [], "f784", "M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm80 64c-8.8 0-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16l288 0c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16L80 256z"]
@@ -7099,11 +7340,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "yen-sign",
   icon: [320, 512, [165, "cny", "jpy", "rmb", "yen"], "f157", "M58.6 46.3C48.8 31.5 29 27.6 14.2 37.4S-4.4 67 5.4 81.8L100.2 224 48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l80 0 0 32-80 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l80 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-80 0 0-32 80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-52.2 0L314.6 81.8c9.8-14.7 5.8-34.6-8.9-44.4s-34.6-5.8-44.4 8.9L160 198.3 58.6 46.3z"]
+<<<<<<< HEAD
+}, Th = c2, Fh = c2, Bh = c2, Dh = c2, w2 = {
+  prefix: "fas",
+  iconName: "ruble-sign",
+  icon: [384, 512, [8381, "rouble", "rub", "ruble"], "f158", "M96 32C78.3 32 64 46.3 64 64l0 192-32 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l32 0 0 32-32 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l32 0 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-32 112 0c79.5 0 144-64.5 144-144s-64.5-144-144-144L96 32zM240 256l-112 0 0-160 112 0c44.2 0 80 35.8 80 80s-35.8 80-80 80z"]
+}, Rh = w2, Eh = w2, Hh = w2, Oh = {
+=======
 }, Th = c2, Fh = c2, Bh = c2, Dh = c2, y2 = {
   prefix: "fas",
   iconName: "ruble-sign",
   icon: [384, 512, [8381, "rouble", "rub", "ruble"], "f158", "M96 32C78.3 32 64 46.3 64 64l0 192-32 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l32 0 0 32-32 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l32 0 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-32 112 0c79.5 0 144-64.5 144-144s-64.5-144-144-144L96 32zM240 256l-112 0 0-160 112 0c44.2 0 80 35.8 80 80s-35.8 80-80 80z"]
 }, Rh = y2, Eh = y2, Hh = y2, Oh = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "sun",
   icon: [512, 512, [9728], "f185", "M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"]
@@ -7263,11 +7512,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "podcast",
   icon: [448, 512, [], "f2ce", "M319.4 372c48.5-31.3 80.6-85.9 80.6-148c0-97.2-78.8-176-176-176S48 126.8 48 224c0 62.1 32.1 116.6 80.6 148c1.2 17.3 4 38 7.2 57.1l.2 1C56 395.8 0 316.5 0 224C0 100.3 100.3 0 224 0S448 100.3 448 224c0 92.5-56 171.9-136 206.1l.2-1.1c3.1-19.2 6-39.8 7.2-57zm-2.3-38.1c-1.6-5.7-3.9-11.1-7-16.2c-5.8-9.7-13.5-17-21.9-22.4c19.5-17.6 31.8-43 31.8-71.3c0-53-43-96-96-96s-96 43-96 96c0 28.3 12.3 53.8 31.8 71.3c-8.4 5.4-16.1 12.7-21.9 22.4c-3.1 5.1-5.4 10.5-7 16.2C99.8 307.5 80 268 80 224c0-79.5 64.5-144 144-144s144 64.5 144 144c0 44-19.8 83.5-50.9 109.9zM224 312c32.9 0 64 8.6 64 43.8c0 33-12.9 104.1-20.6 132.9c-5.1 19-24.5 23.4-43.4 23.4s-38.2-4.4-43.4-23.4c-7.8-28.5-20.6-99.7-20.6-132.8c0-35.1 31.1-43.8 64-43.8zm0-144a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"]
+<<<<<<< HEAD
+}, k2 = {
+  prefix: "fas",
+  iconName: "temperature-full",
+  icon: [320, 512, ["temperature-4", "thermometer-4", "thermometer-full"], "f2c7", "M160 64c-26.5 0-48 21.5-48 48l0 164.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5L208 112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112l0 164.4c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6L48 112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3L144 112c0-8.8 7.2-16 16-16s16 7.2 16 16l0 210.7c18.6 6.6 32 24.4 32 45.3z"]
+}, yg = k2, wg = k2, kg = k2, Ag = {
+=======
 }, w2 = {
   prefix: "fas",
   iconName: "temperature-full",
   icon: [320, 512, ["temperature-4", "thermometer-4", "thermometer-full"], "f2c7", "M160 64c-26.5 0-48 21.5-48 48l0 164.5c0 17.3-7.1 31.9-15.3 42.5C86.2 332.6 80 349.5 80 368c0 44.2 35.8 80 80 80s80-35.8 80-80c0-18.5-6.2-35.4-16.7-48.9c-8.2-10.6-15.3-25.2-15.3-42.5L208 112c0-26.5-21.5-48-48-48zM48 112C48 50.2 98.1 0 160 0s112 50.1 112 112l0 164.4c0 .1 .1 .3 .2 .6c.2 .6 .8 1.6 1.7 2.8c18.9 24.4 30.1 55 30.1 88.1c0 79.5-64.5 144-144 144S16 447.5 16 368c0-33.2 11.2-63.8 30.1-88.1c.9-1.2 1.5-2.2 1.7-2.8c.1-.3 .2-.5 .2-.6L48 112zM208 368c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-20.9 13.4-38.7 32-45.3L144 112c0-8.8 7.2-16 16-16s16 7.2 16 16l0 210.7c18.6 6.6 32 24.4 32 45.3z"]
 }, yg = w2, wg = w2, kg = w2, Ag = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "bell",
   icon: [448, 512, [128276, 61602], "f0f3", "M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416l384 0c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8l0-18.8c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"]
@@ -7323,11 +7580,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "eraser",
   icon: [576, 512, [], "f12d", "M290.7 57.4L57.4 290.7c-25 25-25 65.5 0 90.5l80 80c12 12 28.3 18.7 45.3 18.7L288 480l9.4 0L512 480c17.7 0 32-14.3 32-32s-14.3-32-32-32l-124.1 0L518.6 285.3c25-25 25-65.5 0-90.5L381.3 57.4c-25-25-65.5-25-90.5 0zM297.4 416l-9.4 0-105.4 0-80-80L227.3 211.3 364.7 348.7 297.4 416z"]
+<<<<<<< HEAD
+}, A2 = {
+  prefix: "fas",
+  iconName: "earth-americas",
+  icon: [512, 512, [127758, "earth", "earth-america", "globe-americas"], "f57d", "M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5l0 39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9l0 39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7l0-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1L257 256c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"]
+}, _g = A2, Wg = A2, Gg = A2, Vg = {
+=======
 }, k2 = {
   prefix: "fas",
   iconName: "earth-americas",
   icon: [512, 512, [127758, "earth", "earth-america", "globe-americas"], "f57d", "M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5l0 39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9l0 39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7l0-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1L257 256c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"]
 }, _g = k2, Wg = k2, Gg = k2, Vg = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "person-burst",
   icon: [640, 512, [], "e53b", "M480 96a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-8 384l0-128 16 0 0 128c0 17.7 14.3 32 32 32s32-14.3 32-32l0-223.1 28.6 47.5c9.1 15.1 28.8 20 43.9 10.9s20-28.8 10.9-43.9l-58.3-97c-17.4-28.9-48.6-46.6-82.3-46.6l-29.7 0c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L408 256.9 408 480c0 17.7 14.3 32 32 32s32-14.3 32-32zM190.9 18.1C188.4 12 182.6 8 176 8s-12.4 4-14.9 10.1l-29.4 74L55.6 68.9c-6.3-1.9-13.1 .2-17.2 5.3s-4.6 12.2-1.4 17.9l39.5 69.1L10.9 206.4c-5.4 3.7-8 10.3-6.5 16.7s6.7 11.2 13.1 12.2l78.7 12.2L90.6 327c-.5 6.5 3.1 12.7 9 15.5s12.9 1.8 17.8-2.6L176 286.1l58.6 53.9c4.8 4.4 11.9 5.5 17.8 2.6s9.5-9 9-15.5l-5.6-79.4 50.5-7.8 24.3-40.5-55.2-38L315 92.2c3.3-5.7 2.7-12.8-1.4-17.9s-10.9-7.2-17.2-5.3L220.3 92.1l-29.4-74z"]
@@ -8219,11 +8484,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "plug-circle-exclamation",
   icon: [576, 512, [], "e55d", "M96 0C78.3 0 64 14.3 64 32l0 96 64 0 0-96c0-17.7-14.3-32-32-32zM288 0c-17.7 0-32 14.3-32 32l0 96 64 0 0-96c0-17.7-14.3-32-32-32zM32 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l0 32c0 77.4 55 142 128 156.8l0 67.2c0 17.7 14.3 32 32 32s32-14.3 32-32l0-67.2c12.3-2.5 24.1-6.4 35.1-11.5c-2.1-10.8-3.1-21.9-3.1-33.3c0-80.3 53.8-148 127.3-169.2c.5-2.2 .7-4.5 .7-6.8c0-17.7-14.3-32-32-32L32 160zM432 512a144 144 0 1 0 0-288 144 144 0 1 0 0 288zm0-96a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm0-144c8.8 0 16 7.2 16 16l0 80c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-80c0-8.8 7.2-16 16-16z"]
+<<<<<<< HEAD
+}, v2 = {
+  prefix: "fas",
+  iconName: "link-slash",
+  icon: [640, 512, ["chain-broken", "chain-slash", "unlink"], "f127", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L489.3 358.2l90.5-90.5c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114l-96 96-31.9-25C430.9 239.6 420.1 175.1 377 132c-52.2-52.3-134.5-56.2-191.3-11.7L38.8 5.1zM239 162c30.1-14.9 67.7-9.9 92.8 15.3c20 20 27.5 48.3 21.7 74.5L239 162zM406.6 416.4L220.9 270c-2.1 39.8 12.2 80.1 42.2 110c38.9 38.9 94.4 51 143.6 36.3zm-290-228.5L60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l61.8-61.8-50.6-39.9z"]
+}, Lw = v2, Mw = v2, pw = v2, Cw = {
+=======
 }, A2 = {
   prefix: "fas",
   iconName: "link-slash",
   icon: [640, 512, ["chain-broken", "chain-slash", "unlink"], "f127", "M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L489.3 358.2l90.5-90.5c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114l-96 96-31.9-25C430.9 239.6 420.1 175.1 377 132c-52.2-52.3-134.5-56.2-191.3-11.7L38.8 5.1zM239 162c30.1-14.9 67.7-9.9 92.8 15.3c20 20 27.5 48.3 21.7 74.5L239 162zM406.6 416.4L220.9 270c-2.1 39.8 12.2 80.1 42.2 110c38.9 38.9 94.4 51 143.6 36.3zm-290-228.5L60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l61.8-61.8-50.6-39.9z"]
 }, Lw = A2, Mw = A2, pw = A2, Cw = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "clone",
   icon: [512, 512, [], "f24d", "M288 448L64 448l0-224 64 0 0-64-64 0c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l224 0c35.3 0 64-28.7 64-64l0-64-64 0 0 64zm-64-96l224 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L224 0c-35.3 0-64 28.7-64 64l0 224c0 35.3 28.7 64 64 64z"]
@@ -8379,11 +8652,19 @@ const wT = "fas", pl = {
   prefix: "fas",
   iconName: "cart-flatbed-suitcase",
   icon: [640, 512, ["luggage-cart"], "f59d", "M0 32C0 14.3 14.3 0 32 0L48 0c44.2 0 80 35.8 80 80l0 288c0 8.8 7.2 16 16 16l464 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-66.7 0c1.8 5 2.7 10.4 2.7 16c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-5.6 1-11 2.7-16l-197.5 0c1.8 5 2.7 10.4 2.7 16c0 26.5-21.5 48-48 48s-48-21.5-48-48c0-5.6 1-11 2.7-16L144 448c-44.2 0-80-35.8-80-80L64 80c0-8.8-7.2-16-16-16L32 64C14.3 64 0 49.7 0 32zM432 96l0-40c0-4.4-3.6-8-8-8l-80 0c-4.4 0-8 3.6-8 8l0 40 96 0zM288 96l0-40c0-30.9 25.1-56 56-56l80 0c30.9 0 56 25.1 56 56l0 40 0 224-192 0 0-224zM512 320l0-224 16 0c26.5 0 48 21.5 48 48l0 128c0 26.5-21.5 48-48 48l-16 0zM240 96l16 0 0 224-16 0c-26.5 0-48-21.5-48-48l0-128c0-26.5 21.5-48 48-48z"]
+<<<<<<< HEAD
+}, lk = kc, P2 = {
+  prefix: "fas",
+  iconName: "rectangle-xmark",
+  icon: [512, 512, [62164, "rectangle-times", "times-rectangle", "window-close"], "f410", "M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"]
+}, sk = P2, ak = P2, ek = P2, nk = {
+=======
 }, lk = kc, v2 = {
   prefix: "fas",
   iconName: "rectangle-xmark",
   icon: [512, 512, [62164, "rectangle-times", "times-rectangle", "window-close"], "f410", "M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"]
 }, sk = v2, ak = v2, ek = v2, nk = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   prefix: "fas",
   iconName: "baht-sign",
   icon: [320, 512, [], "e0ac", "M144 0c-17.7 0-32 14.3-32 32l0 32L37.6 64C16.8 64 0 80.8 0 101.6L0 224l0 41.7L0 288 0 406.3c0 23 18.7 41.7 41.7 41.7l70.3 0 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32 32 0c61.9 0 112-50.1 112-112c0-40.1-21.1-75.3-52.7-95.1C280.3 222.6 288 200.2 288 176c0-61.9-50.1-112-112-112l0-32c0-17.7-14.3-32-32-32zM112 128l0 96-48 0 0-96 48 0zm64 96l0-96c26.5 0 48 21.5 48 48s-21.5 48-48 48zm-64 64l0 96-48 0 0-96 48 0zm64 96l0-96 32 0c26.5 0 48 21.5 48 48s-21.5 48-48 48l-32 0z"]
@@ -9071,7 +9352,11 @@ var kT = {
   faChessBishop: Tn,
   faFaceGrinWink: X4,
   faGrinWink: Fn,
+<<<<<<< HEAD
+  faEarDeaf: p2,
+=======
   faEarDeaf: M2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faDeaf: Bn,
   faDeafness: Dn,
   faHardOfHearing: Rn,
@@ -9093,7 +9378,11 @@ var kT = {
   faV: Xn,
   faBangladeshiTakaSign: $n,
   faBicycle: Kn,
+<<<<<<< HEAD
+  faStaffSnake: C2,
+=======
   faStaffSnake: p2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faRodAsclepius: Qn,
   faRodSnake: Jn,
   faStaffAesculapius: Zn,
@@ -9112,7 +9401,11 @@ var kT = {
   faQ: zo,
   faG: mo,
   faNotesMedical: Lo,
+<<<<<<< HEAD
+  faTemperatureHalf: u2,
+=======
   faTemperatureHalf: C2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faTemperature2: Mo,
   faThermometer2: po,
   faThermometerHalf: Co,
@@ -9140,7 +9433,11 @@ var kT = {
   faChartSimple: Ro,
   faMarsStroke: Eo,
   faVial: Ho,
+<<<<<<< HEAD
+  faGauge: d2,
+=======
   faGauge: u2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faDashboard: Oo,
   faGaugeMed: Io,
   faTachometerAltAverage: Uo,
@@ -9346,7 +9643,11 @@ var kT = {
   faMartiniGlass: $0,
   faGlassMartiniAlt: Ff,
   faSquareBinary: Bf,
+<<<<<<< HEAD
+  faRotateLeft: x2,
+=======
   faRotateLeft: d2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faRotateBack: Df,
   faRotateBackward: Rf,
   faUndoAlt: Ef,
@@ -9425,7 +9726,11 @@ var kT = {
   faLocationPinLock: Er,
   faPause: Hr,
   faHillAvalanche: Or,
+<<<<<<< HEAD
+  faTemperatureEmpty: h2,
+=======
   faTemperatureEmpty: x2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faTemperature0: Ir,
   faThermometer0: Ur,
   faThermometerEmpty: qr,
@@ -9644,7 +9949,11 @@ var kT = {
   faAppleAlt: OL,
   faKitchenSet: IL,
   faR: UL,
+<<<<<<< HEAD
+  faTemperatureQuarter: g2,
+=======
   faTemperatureQuarter: h2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faTemperature1: qL,
   faThermometer1: _L,
   faThermometerQuarter: WL,
@@ -9775,7 +10084,11 @@ var kT = {
   faHandScissors: Tp,
   faHandsPraying: F8,
   faPrayingHands: Fp,
+<<<<<<< HEAD
+  faArrowRotateRight: N2,
+=======
   faArrowRotateRight: g2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faArrowRightRotate: Bp,
   faArrowRotateForward: Dp,
   faRedo: Rp,
@@ -9966,7 +10279,11 @@ var kT = {
   faStreetView: pd,
   faFrancSign: Cd,
   faVolumeOff: ud,
+<<<<<<< HEAD
+  faHandsAslInterpreting: b2,
+=======
   faHandsAslInterpreting: N2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faAmericanSignLanguageInterpreting: dd,
   faAslInterpreting: xd,
   faHandsAmericanSignLanguageInterpreting: hd,
@@ -10003,7 +10320,11 @@ var kT = {
   faCaretDown: Gd,
   faHouseChimneyMedical: N5,
   faClinicMedical: Vd,
+<<<<<<< HEAD
+  faTemperatureThreeQuarters: S2,
+=======
   faTemperatureThreeQuarters: b2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faTemperature3: jd,
   faThermometer3: Yd,
   faThermometerThreeQuarters: Xd,
@@ -10076,7 +10397,11 @@ var kT = {
   faOutdent: E5,
   faDedent: jx,
   faHeartCircleExclamation: Yx,
+<<<<<<< HEAD
+  faHouse: y2,
+=======
   faHouse: S2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faHome: Xx,
   faHomeAlt: $x,
   faHomeLgAlt: Kx,
@@ -10127,7 +10452,11 @@ var kT = {
   faJpy: Fh,
   faRmb: Bh,
   faYen: Dh,
+<<<<<<< HEAD
+  faRubleSign: w2,
+=======
   faRubleSign: y2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faRouble: Rh,
   faRub: Eh,
   faRuble: Hh,
@@ -10183,7 +10512,11 @@ var kT = {
   faSquareH: Z5,
   faHSquare: bg,
   faPodcast: Sg,
+<<<<<<< HEAD
+  faTemperatureFull: k2,
+=======
   faTemperatureFull: w2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faTemperature4: yg,
   faThermometer4: wg,
   faThermometerFull: kg,
@@ -10205,7 +10538,11 @@ var kT = {
   faDroplet: a7,
   faTint: Ug,
   faEraser: qg,
+<<<<<<< HEAD
+  faEarthAmericas: A2,
+=======
   faEarthAmericas: k2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faEarth: _g,
   faEarthAmerica: Wg,
   faGlobeAmericas: Gg,
@@ -10523,7 +10860,11 @@ var kT = {
   faGrinTongueWink: rw,
   faHandHolding: zw,
   faPlugCircleExclamation: mw,
+<<<<<<< HEAD
+  faLinkSlash: v2,
+=======
   faLinkSlash: A2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faChainBroken: Lw,
   faChainSlash: Mw,
   faUnlink: pw,
@@ -10582,7 +10923,11 @@ var kT = {
   faGlobeEurope: ck,
   faCartFlatbedSuitcase: kc,
   faLuggageCart: lk,
+<<<<<<< HEAD
+  faRectangleXmark: P2,
+=======
   faRectangleXmark: v2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faRectangleTimes: sk,
   faTimesRectangle: ak,
   faWindowClose: ek,
@@ -10809,7 +11154,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faArrowRotateBackward: Gu,
   faArrowRotateForward: Dp,
   faArrowRotateLeft: Z,
+<<<<<<< HEAD
+  faArrowRotateRight: N2,
+=======
   faArrowRotateRight: g2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faArrowTrendDown: kw,
   faArrowTrendUp: iS,
   faArrowTurnDown: $7,
@@ -11292,12 +11641,20 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faDumpsterFire: TL,
   faDungeon: xk,
   faE: _o,
+<<<<<<< HEAD
+  faEarDeaf: p2,
+=======
   faEarDeaf: M2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faEarListen: t7,
   faEarth: _g,
   faEarthAfrica: o4,
   faEarthAmerica: Wg,
+<<<<<<< HEAD
+  faEarthAmericas: A2,
+=======
   faEarthAmericas: k2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faEarthAsia: Oc,
   faEarthEurope: wc,
   faEarthOceania: tc,
@@ -11482,7 +11839,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faG: mo,
   faGamepad: Ue,
   faGasPump: Qe,
+<<<<<<< HEAD
+  faGauge: d2,
+=======
   faGauge: u2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faGaugeHigh: g1,
   faGaugeMed: Io,
   faGaugeSimple: z1,
@@ -11572,7 +11933,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faHandcuffs: tk,
   faHands: B1,
   faHandsAmericanSignLanguageInterpreting: hd,
+<<<<<<< HEAD
+  faHandsAslInterpreting: b2,
+=======
   faHandsAslInterpreting: N2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faHandsBound: Pi,
   faHandsBubbles: j0,
   faHandsClapping: hC,
@@ -11660,7 +12025,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faHourglassEnd: h4,
   faHourglassHalf: W4,
   faHourglassStart: d0,
+<<<<<<< HEAD
+  faHouse: y2,
+=======
   faHouse: S2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faHouseChimney: b8,
   faHouseChimneyCrack: v6,
   faHouseChimneyMedical: N5,
@@ -11771,7 +12140,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faLineChart: uL,
   faLinesLeaning: Vb,
   faLink: i7,
+<<<<<<< HEAD
+  faLinkSlash: v2,
+=======
   faLinkSlash: A2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faLiraSign: XC,
   faList: D4,
   faList12: xm,
@@ -12108,7 +12481,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faRectangleAd: R6,
   faRectangleList: o5,
   faRectangleTimes: sk,
+<<<<<<< HEAD
+  faRectangleXmark: P2,
+=======
   faRectangleXmark: v2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faRecycle: sM,
   faRedo: Rp,
   faRedoAlt: eh,
@@ -12146,7 +12523,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faRotateBack: Df,
   faRotateBackward: Rf,
   faRotateForward: nh,
+<<<<<<< HEAD
+  faRotateLeft: x2,
+=======
   faRotateLeft: d2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faRotateRight: x1,
   faRouble: Rh,
   faRoute: FM,
@@ -12154,7 +12535,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faRssSquare: On,
   faRub: Eh,
   faRuble: Hh,
+<<<<<<< HEAD
+  faRubleSign: w2,
+=======
   faRubleSign: y2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faRug: Zw,
   faRuler: SC,
   faRulerCombined: jb,
@@ -12334,7 +12719,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faSquareVirus: hu,
   faSquareXmark: P1,
   faStaffAesculapius: Zn,
+<<<<<<< HEAD
+  faStaffSnake: C2,
+=======
   faStaffSnake: p2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faStairs: _n,
   faStamp: qn,
   faStapler: IA,
@@ -12425,6 +12814,15 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faTemperatureArrowDown: B6,
   faTemperatureArrowUp: J5,
   faTemperatureDown: fm,
+<<<<<<< HEAD
+  faTemperatureEmpty: h2,
+  faTemperatureFull: k2,
+  faTemperatureHalf: u2,
+  faTemperatureHigh: Ji,
+  faTemperatureLow: Ry,
+  faTemperatureQuarter: g2,
+  faTemperatureThreeQuarters: S2,
+=======
   faTemperatureEmpty: x2,
   faTemperatureFull: w2,
   faTemperatureHalf: C2,
@@ -12432,6 +12830,7 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faTemperatureLow: Ry,
   faTemperatureQuarter: h2,
   faTemperatureThreeQuarters: b2,
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   faTemperatureUp: hg,
   faTenge: uC,
   faTengeSign: U8,
@@ -12694,7 +13093,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   faZap: Sh,
   fas: kT,
   prefix: wT
+<<<<<<< HEAD
+}, Symbol.toStringTag, { value: "Module" })), T2 = (c, l) => {
+=======
 }, Symbol.toStringTag, { value: "Module" })), P2 = (c, l) => {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   const s = c.__vccOpts || c;
   for (const [a, e] of l)
     s[a] = e;
@@ -12724,7 +13127,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
     }
   },
   setup(c) {
+<<<<<<< HEAD
+    q2("themeColors", m2);
+=======
     U2("themeColors", q2);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     const l = Object.values(ZA).filter(
       (s) => s.iconName !== void 0
     );
@@ -12739,7 +13146,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
       sv(s.$slots, "default", {}, void 0, !0)
     ], 2));
   }
+<<<<<<< HEAD
+}, GT = /* @__PURE__ */ T2(AT, [["__scopeId", "data-v-7cabe726"]]), vT = {
+=======
 }, GT = /* @__PURE__ */ P2(AT, [["__scopeId", "data-v-a065f635"]]), vT = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   key: 0,
   for: "custom-input"
 }, PT = { class: "input" }, TT = ["type", "placeholder"], FT = {
@@ -12771,7 +13182,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   }),
   emits: ["update:modelValue"],
   setup(c) {
+<<<<<<< HEAD
+    q2("themeColors", m2);
+=======
     U2("themeColors", q2);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     const l = Object.values(ZA).filter(
       (e) => e.iconName !== void 0
     );
@@ -12799,7 +13214,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
       ])
     ], 2));
   }
+<<<<<<< HEAD
+}, VT = /* @__PURE__ */ T2(FT, [["__scopeId", "data-v-6893dfe2"]]), BT = ["for"], DT = ["id", "value"], RT = {
+=======
 }, VT = /* @__PURE__ */ P2(FT, [["__scopeId", "data-v-6893dfe2"]]), BT = ["for"], DT = ["id", "value"], RT = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   __name: "AtnRadio",
   props: /* @__PURE__ */ t2({
     label: {
@@ -12844,7 +13263,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   }),
   emits: /* @__PURE__ */ t2(["update:inputValue"], ["update:modelValue"]),
   setup(c) {
+<<<<<<< HEAD
+    q2("themeColors", m2);
+=======
     U2("themeColors", q2);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     const l = c, s = f3(c, "modelValue"), a = crypto.randomUUID();
     return (e, n) => (x(), N("div", {
       class: K(["radio-div", c.type])
@@ -12869,7 +13292,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
       ]))), 128))
     ], 2));
   }
+<<<<<<< HEAD
+}, jT = /* @__PURE__ */ T2(RT, [["__scopeId", "data-v-6617755f"]]), ET = { key: 0 }, HT = {
+=======
 }, jT = /* @__PURE__ */ P2(RT, [["__scopeId", "data-v-6617755f"]]), ET = { key: 0 }, HT = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   key: 1,
   class: "options-list"
 }, OT = ["onClick"], IT = {
@@ -12902,7 +13329,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   },
   emits: ["update:modelValue"],
   setup(c, { emit: l }) {
+<<<<<<< HEAD
+    q2("themeColors", m2), S3.add(L7);
+=======
     U2("themeColors", q2), S3.add(L7);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
     const s = c, a = l, e = O1("selecione um valor"), n = O1(!1), o = O1(null);
     function i() {
       n.value = !n.value;
@@ -12938,7 +13369,11 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
       ])) : G("", !0)
     ], 2));
   }
+<<<<<<< HEAD
+}, YT = /* @__PURE__ */ T2(IT, [["__scopeId", "data-v-d372e292"]]), UT = ["for"], qT = ["id", "value"], _T = {
+=======
 }, YT = /* @__PURE__ */ P2(IT, [["__scopeId", "data-v-d372e292"]]), UT = ["for"], qT = ["id", "value"], _T = {
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
   __name: "AtnCheckbox",
   props: /* @__PURE__ */ t2({
     label: {
@@ -12995,11 +13430,32 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
       ]))), 128))
     ], 2));
   }
+<<<<<<< HEAD
+}, XT = /* @__PURE__ */ T2(_T, [["__scopeId", "data-v-197da683"]]), $T = {
+  install(c, l = {}) {
+    const s = {
+      ...m2,
+      ...l.globalTheme || {}
+    }, a = document.documentElement;
+    Object.entries(s).forEach(
+      ([e, { textColor: n, backgroundColor: o, border: i, iconColor: f }]) => {
+        a.style.setProperty(`--${e}-bg-color`, o ?? ""), a.style.setProperty(`--${e}-text-color`, n), i && a.style.setProperty(`--${e}-border-color`, i), f && a.style.setProperty(`--${e}-icon-color`, f);
+      }
+    ), c.provide("defaultTheme", s);
+  }
+};
+=======
 }, XT = /* @__PURE__ */ P2(_T, [["__scopeId", "data-v-197da683"]]);
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 export {
   GT as AtnButton,
   XT as AtnCheckbox,
   VT as AtnInput,
   jT as AtnRadio,
+<<<<<<< HEAD
+  YT as AtnSelect,
+  $T as default
+=======
   YT as AtnSelect
+>>>>>>> 98dc1c1b4487f4f839e16b05e85b1b7385bc39b2
 };

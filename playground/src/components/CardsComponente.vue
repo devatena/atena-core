@@ -1,11 +1,6 @@
 <template>
   <div class="main-card">
-    <div>
-      <font-awesome-icon
-        class="icon"
-        :icon="['fas', 'arrow-left']"
-      />
-    </div>
+
     <h1>{{ titulo }}</h1>
     <p>{{ paragrafo }}</p>
   </div>

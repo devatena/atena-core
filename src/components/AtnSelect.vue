@@ -18,6 +18,7 @@
       </li>
     </ul>
   </div>
+  {{valorAtual}}
 </template>
 
 <script setup>
@@ -61,7 +62,7 @@ const props = defineProps({
 const emit = defineEmits(["update:modelValue"]);
 const valorAtual = ref("selecione um valor");
 const isDropdownVisible = ref(false);
-const selectContainer = ref(null);
+const selectContainer = ref();
 
 function toggleDropdown() {
   isDropdownVisible.value = !isDropdownVisible.value;
@@ -84,7 +85,7 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style>
 .custom-select {
   position: relative;
   width: 200px;
