@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "atena-core": "github:devatena/atena-core",
+    "atena-core": "github:devatena/atena-core#dev",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },

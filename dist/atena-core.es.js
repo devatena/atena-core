@@ -13014,5 +13014,5 @@ export {
   WT as AtnInput,
   GT as AtnRadio,
   VT as AtnSelect,
-  YT as default
+  YT as ThemePlugin
 };

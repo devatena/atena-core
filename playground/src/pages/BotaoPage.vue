@@ -29,7 +29,7 @@
 
 <script setup>
 
-import { AtnButton } from '../../../src';
+import { AtnButton } from 'atena-core';
 </script>
 
 <style scoped>
