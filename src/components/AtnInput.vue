@@ -63,7 +63,7 @@ const props = defineProps({
 const model = defineModel();
 </script>
 
-<style scoped>
+<style scoped >
 .default {
   padding-left: 10px;
   background-color: transparent;

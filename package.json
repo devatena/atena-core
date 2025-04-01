@@ -5,10 +5,15 @@
   "main": "dist/atena-core.umd.js",
   "module": "dist/atena-core.es.js",
   "types": "dist/types/index.d.ts",
-  "exports": {
-    "import": "./dist/atena-core.es.js",
-    "require": "./dist/atena-core.umd.js"
+ "exports": {
+  "import": {
+    "types": "./dist/types/index.d.ts",
+    "default": "./dist/atena-core.es.js"
   },
+  "require": {
+    "default": "./dist/atena-core.umd.js"
+  }
+},
   "files": [
     "dist"
   ],

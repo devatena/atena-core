@@ -48,6 +48,6 @@ const props = defineProps({
 
 </script>
 
-<style>
-@import '../styles//button.css';
+<style scoped>
+@import '../styles/button.css';
 </style>

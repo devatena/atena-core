@@ -84,7 +84,7 @@ onMounted(() => {
 });
 </script>
 
-<style>
+<style scoped>
 .custom-select {
   position: relative;
   width: 200px;
