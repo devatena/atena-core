@@ -26,7 +26,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { AtnCheckbox } from "../../../src";
+import { AtnCheckbox } from "atena-core";
 
 const valoratual = ref([])
 const options = [

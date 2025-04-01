@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-import { AtnSelect } from "../../../src";
+import { AtnSelect } from "atena-core";
 import { ref } from "vue";
 
 const opcaoSelecionada = ref();

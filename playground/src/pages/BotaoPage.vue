@@ -28,8 +28,7 @@
 </template>
 
 <script setup>
-
-import { AtnButton } from 'atena-core';
+import { AtnButton } from '../../../src';
 </script>
 
 <style scoped>

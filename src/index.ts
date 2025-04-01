@@ -1,6 +1,7 @@
 export * from "./components";
 export { ThemePlugin };
 
+import "../dist/atena-core.css"; 
 import '../src/styles/global.css';
 import "../src/styles/button.css"
 import "../src/styles/checkbox.css"

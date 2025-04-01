@@ -35,7 +35,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { AtnInput } from "../../../src";
+import { AtnInput } from "atena-core";
 const inputValue = ref("");
 </script>
 

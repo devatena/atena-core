@@ -8,7 +8,7 @@
 import { IconLabel } from "../../../src";
 </script>
 
-<style>
+<style scoped>
 .container-pai {
   display: flex;
   align-items: center;
