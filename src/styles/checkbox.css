@@ -1,0 +1,40 @@
+.checkbox-div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #707070;
+    border-radius: 0;
+    cursor: pointer;
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #4e4e4e;
+  }
+  
+  span {
+    font-size: 10px;
+    color: #848484;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  

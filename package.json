@@ -15,7 +15,14 @@
   }
 },
   "files": [
-    "dist"
+    "dist",
+    "dist/style.css",
+    "dist/button.css",
+    "dist/checkbox.css",
+    "dist/global.css",
+    "dist/input.css",
+    "dist/radio.css",
+    "dist/select.css"
   ],
   "scripts": {
     "build": "vite build",
