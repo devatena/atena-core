@@ -1,5 +1,5 @@
 import { App } from "vue";
-import DefaultTheme from "./config/DefautTheme";
+import DefaultTheme from "./config/DefaultTheme";
 
 interface ThemeOptions {
   globalTheme?: Record<string, any>;
@@ -12,7 +12,6 @@ const ThemePlugin = {
       ...(options.globalTheme || {}),
     };
     const root = document.documentElement;
-    
     Object.entries(GlobalTheme).forEach(
       ([key, { textColor, backgroundColor, border, iconColor }]) => {
         root.style.setProperty(`--${key}-bg-color`, backgroundColor  ?? "");

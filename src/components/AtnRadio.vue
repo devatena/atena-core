@@ -18,7 +18,7 @@
 
 <script setup>
 import { provide } from "vue";
-import defaultTheme from "../config/DefautTheme";
+import defaultTheme from "../config/DefaultTheme"
 provide("themeColors", defaultTheme);
 
 const props = defineProps({

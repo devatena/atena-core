@@ -27,7 +27,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 import { provide } from "vue";
-import defaultTheme from "../config/DefautTheme";
+import defaultTheme from "../config/DefaultTheme"
 
 provide("themeColors", defaultTheme);
 

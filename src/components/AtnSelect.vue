@@ -22,7 +22,7 @@
 
 <script setup>
 import { provide } from "vue";
-import defaultTheme from "../config/DefautTheme";
+import defaultTheme from "../config/DefaultTheme"
 import { ref, onMounted } from "vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
