@@ -1,4 +1,4 @@
 export * from "./components";
 import '../src/styles/global.css';
-import ThemePugin from "./plugin";
-export default ThemePugin;
+import ThemePlugin from "./plugin";
+export default ThemePlugin;

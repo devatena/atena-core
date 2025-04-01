@@ -5,7 +5,7 @@ interface ThemeOptions {
   globalTheme?: Record<string, any>;
 }
 
-const ThemePugin = {
+const ThemePlugin = {
   install(app: App, options: ThemeOptions = {}) {
     const GlobalTheme = {
       ...DefaultTheme, 
@@ -30,4 +30,4 @@ const ThemePugin = {
   },
 };
 
-export default ThemePugin;
+export default ThemePlugin;

@@ -109,9 +109,9 @@ declare interface ThemeOptions {
     globalTheme?: Record<string, any>;
 }
 
-declare const ThemePugin: {
+declare const ThemePlugin: {
     install(app: App, options?: ThemeOptions): void;
 };
-export default ThemePugin;
+export default ThemePlugin;
 
 export { }

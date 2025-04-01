@@ -110,6 +110,10 @@ const props = defineProps({
   justify-content: center;
 }
 
+.circle .icon{
+  color: var(--primary-icon-color);
+}
+
 .secondary::before {
   background-color: var(--secondary-bg-color);
   color: var(--secondary-text-color);
