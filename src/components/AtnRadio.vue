@@ -66,5 +66,5 @@ defineEmits(["update:inputValue"]);
 </script>
 
 <style scoped>
-@import "../styles/radio.css"
+@import "../styles/radio.css";
 </style>

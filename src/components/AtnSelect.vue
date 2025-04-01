@@ -85,5 +85,5 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@import "../styles/select.css"
+@import "../styles/select.css";
 </style>

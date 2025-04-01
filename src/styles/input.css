@@ -1,4 +1,4 @@
-.default {
+.default-input {
     padding-left: 10px;
     background-color: transparent;
     border: none;
@@ -31,7 +31,7 @@
     color: #4e4e4e;
   }
   
-  .default:-webkit-autofill {
+  .default-input:-webkit-autofill {
     background-color: yellow !important;
     color: black;
   }

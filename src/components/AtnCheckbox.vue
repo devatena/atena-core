@@ -50,5 +50,5 @@ defineEmits(["update:inputValue"]);
 </script>
 
 <style scoped>
-@import "../styles/checkbox.css"
+@import "../styles/checkbox.css";
 </style>

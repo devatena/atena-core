@@ -1,4 +1,4 @@
-.default {
+.default-button {
     gap: 10px;
     border: none;
     outline: none;
@@ -14,7 +14,7 @@
     color: var(--primary-text-color);
   }
   
-  .default::before {
+  .default-button::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -26,7 +26,7 @@
     background-color: var(--primary-bg-color);
   }
   
-  .default:hover::before {
+  .default-button:hover::before {
     filter: contrast(0.75);
   }
   
@@ -49,7 +49,7 @@
     color: var(--secondary-text-color);
   }
   
-  .default.circle {
+  .default-button.circle {
     width: 56px;
     height: 56px;
     padding: 0;
