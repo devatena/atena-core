@@ -37,7 +37,7 @@
 </template>
 
 <script setup>
-import { AtnRadio } from "atena-core";
+import { AtnRadio } from "../../../src";
 import { ref } from "vue";
 
 const selectedOption = ref("");

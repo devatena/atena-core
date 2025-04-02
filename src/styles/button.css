@@ -30,7 +30,7 @@
     filter: contrast(0.75);
   }
   
-  .block {
+.block {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,4 +88,4 @@
   .default.outline {
     color: var(--primary-border-color);
   }
-  
+     

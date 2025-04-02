@@ -3,6 +3,7 @@
     <div class="checkbox">
       <h1>Checkbox com label</h1>
       <AtnCheckbox
+      label="checkbox"
       v-model="valoratual"
       :options="options"
       optionName="name"
@@ -26,7 +27,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { AtnCheckbox } from "atena-core";
+import { AtnCheckbox } from "../../../src";
 
 const valoratual = ref([])
 const options = [

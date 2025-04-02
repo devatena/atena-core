@@ -12729,7 +12729,7 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
       (s) => s.iconName !== void 0
     );
     return S3.add(...l), (s, a) => (x(), N("button", {
-      class: K(["default", c.expand, c.type])
+      class: K(["default-button", c.expand, c.type])
     }, [
       c.icon ? (x(), F9(z2(w3), {
         key: 0,
@@ -12739,7 +12739,7 @@ const ZA = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
       sv(s.$slots, "default", {}, void 0, !0)
     ], 2));
   }
-}, GT = /* @__PURE__ */ T2(AT, [["__scopeId", "data-v-9c067a39"]]), vT = {
+}, GT = /* @__PURE__ */ T2(AT, [["__scopeId", "data-v-b8891a7a"]]), vT = {
   key: 0,
   for: "custom-input"
 }, PT = { class: "input" }, TT = ["type", "placeholder"], FT = {

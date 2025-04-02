@@ -27,7 +27,7 @@
     color: var(--primary-text-color);
   }
   
-  .default::placeholder {
+  .default-input::placeholder {
     color: #4e4e4e;
   }
   

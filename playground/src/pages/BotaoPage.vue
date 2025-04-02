@@ -6,23 +6,23 @@
     </div>
     <div class="button-div">
       <h1>Botao sem icone</h1>
-      <AtnButton class="primary">botao de teste</AtnButton>
+      <AtnButton type="primary" class="primary">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Botao secundario</h1>
-      <AtnButton type="secondary" icon="user">botao de teste</AtnButton>
+      <AtnButton type="primary" icon="user">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Outline</h1>
-      <AtnButton type="outline">botao de teste</AtnButton>
+      <AtnButton type="primary">botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Expandido</h1>
-      <AtnButton expand="block" type="secondary">botao de teste</AtnButton>
+      <AtnButton type="primary" expand="block" >botao de teste</AtnButton>
     </div>
     <div class="button-div">
       <h1>Botao Circular</h1>
-      <AtnButton icon="user" type="circle" ></AtnButton>
+      <AtnButton type="primary" icon="user" ></AtnButton>
     </div>
   </div>
 </template>

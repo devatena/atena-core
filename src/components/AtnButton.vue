@@ -1,5 +1,5 @@
 <template>
-  <button  :class="['default', expand, type]">
+  <button  :class="['default-button', expand, type]">
     <font-awesome-icon
       class="icon"
       v-if="icon"
