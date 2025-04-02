@@ -4,32 +4,19 @@
       <div class="inputs-login">
         <AtnInput
           label="CPF ou e-mail"
-          gap="7px"
           v-model="cpf"
-          labelFontWeight="600"
-          placeholderColor="#6E6E6C"
-          fontFamily="Poppins"
           placeholder="CPF ou e-mail"
           expand="block"
-          placeholderFontWeight="300"
-          labelColor="#5845DB"
         ></AtnInput>
         <AtnInput
-          gap="7px"
           v-model="senha"
-          placeholderColor="#6E6E6C"
-          labelFontWeight="600"
-          placeholderFontWeight="300"
-          fontFamily="Poppins"
           label="Senha"
           placeholder="Insira sua senha"
           expand="block"
-          labelColor="#5845DB"
+          :disabled='true'
         ></AtnInput>
       </div>
-      <AtnButton
-     @click="router.push('/formPageTeste')" 
-     expand="block"
+      <AtnButton @click="router.push('/formPageTeste')" expand="block"
         >Entrar</AtnButton
       >
       <a class="senha">Esqueci minha senha</a>
@@ -64,6 +51,7 @@ const senha = ref("");
   height: 100vh;
   background-color: #8538d5;
 }
+
 .form {
   padding: 30px 20px 30px;
   border-radius: 32px;

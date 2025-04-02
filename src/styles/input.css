@@ -68,6 +68,7 @@
   .main-input {
     width: 359px;
   }
+
   
   input[type="number"]::-webkit-outer-spin-button,
   input[type="number"]::-webkit-inner-spin-button {
@@ -78,4 +79,3 @@
   input[type="number"] {
     appearance: none;
   }
-  

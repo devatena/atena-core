@@ -70,6 +70,7 @@ const valorRadio = ref("");
   height: 100vh;
   background-color: #f5f5f5;
 }
+
 .form {
   border-radius: 10px;
   width: 350px;

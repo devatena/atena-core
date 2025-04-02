@@ -3,9 +3,8 @@ import "./style.css";
 import App from "./App.vue";
 import router from "./router";
 import { ThemePlugin } from "atena-core";
-import globalTheme from "./styles/themes/globalTheme";
 
 const app = createApp(App)
 .use(router)
-.use(ThemePlugin, { globalTheme })
+.use(ThemePlugin, )
 app.mount("#app");
