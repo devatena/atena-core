@@ -80,12 +80,12 @@
     color: var(--primary-text-color);
   }
   
-  .default.outline::before {
+  .default-button.outline::before {
     background-color: transparent;
     border: 1px solid var(--primary-border-color);
   }
   
-  .default.outline {
+  .default-button.outline {
     color: var(--primary-border-color);
   }
      

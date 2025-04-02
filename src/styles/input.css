@@ -28,7 +28,7 @@
   }
   
   .default-input::placeholder {
-    color: #4e4e4e;
+    color: hsl(0, 0%, 31%);
   }
   
   .default-input:-webkit-autofill {
@@ -46,9 +46,12 @@
   }
   
   .main-input.block {
-    width: 100%;
+  width: 100%;
+   display: flex;
+   align-items: start;
+   flex-direction: column;
   }
-  
+
   .icon {
     margin-left: 16px;
     width: 20px;
@@ -59,6 +62,7 @@
     font-weight: 600;
     font-size: 16px;
     color: #4e4e4e;
+    align-items: start;
   }
   
   .main-input {

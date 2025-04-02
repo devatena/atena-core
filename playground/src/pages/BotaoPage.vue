@@ -22,13 +22,13 @@
     </div>
     <div class="button-div">
       <h1>Botao Circular</h1>
-      <AtnButton type="primary" icon="user" ></AtnButton>
+      <AtnButton type="circle" icon="user" ></AtnButton>
     </div>
   </div>
 </template>
 
 <script setup>
-import { AtnButton } from '../../../src';
+import { AtnButton } from 'atena-core';
 </script>
 
 <style scoped>
